@@ -249,7 +249,7 @@ a:hover {
      padding-left: 2em;
 }
 
-code {
+p code {
      display: inline-block;
      font-family: inherit;
      background-color: rgba(0, 0, 0, 0.2);
@@ -261,8 +261,54 @@ code {
      font-weight: lighter;
 }
 
-.whitesection code {
+.whitesection p code {
      color: black;
      background-color: rgba(0, 0, 0, 0.07);
      border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+
+code{
+     font-family: 'Courier New', Courier, monospace;
+     font-weight: lighter;
+     color: black;
+     background-color: rgba(0, 0, 0, 0.07);
+     border: 1px solid rgba(0, 0, 0, 0.1);
+     display: block;
+     border-radius: 2px;
+     padding: 1em;
+     text-align: center;
+
+}
+math{
+     display: block;
+     padding: 0em 1em;
+}
+
+.codeexample{
+     display: flex;
+     flex-direction: row;
+     margin: 1em 0em;
+}
+
+.codeexample code, .codeexample math{
+     min-width:300px;
+     flex-basis:1;
+     flex-grow:1;
+}
+
+.codeexample code{
+     border-top-left-radius: 2px;
+     border-bottom-left-radius: 2px;
+     border-top-right-radius: 0px;
+     border-bottom-right-radius: 0px;
+
+}
+
+.codeexample math{
+     border-top: 1px solid rgba(0, 0, 0, 0.1);
+     border-right: 1px solid rgba(0, 0, 0, 0.1);
+     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+     border-top-right-radius: 2px;
+     border-bottom-right-radius: 2px;
 }

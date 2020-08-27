@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8" />
+
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i&amp;subset=greek,greek-ext,latin-ext"
+        rel="stylesheet">
+
+    <link href="style.css" type="text/css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css"
+        integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+
+    <!-- The loading of KaTeX is deferred to speed up page rendering -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js"
+        integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4"
+        crossorigin="anonymous"></script>
+
+    <!-- To automatically render math in text elements, include the auto-render extension: -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js"
+        integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
+
+
+</head>
+
+<body>
+
+
+
+    <section class="whitesection" id="part0">
+        <div class="centrecolumn">
+            <div class="textcolumn">
+                <h1>Adding mathematical expressions to questions</h1>
+
+                <p>
+                    You can add mathematical expressions to questions that you write using <code>&lt;math&gt;</code>
+                    tags.
+                </p>
+
+                <p>
+                    Place opening and closing <code>&lt;math&gt;</code> tags around each mathematical expression, like
+                    shown in the example below.
+                </p>
+                <code>
+        &lt;math&gt;y = 2x + 3&lt;/math&gt;
+</code>
+
+                <p>
+                    The <b>opening</b> tag is just the word "math" with angle brackets on either side:
+                    <code>&lt;math&gt;</code>.
+                    The <b>closing</b> tag is the same but with a forward slash before the word "math":
+                    <code>&lt;/math&gt;</code>.
+                </p>
+
+                <p>
+                    The mathematical expression needs to be written using LaTeX syntax. For simpler expressions, like
+                    the one shown above, often no special LaTeX commands are needed, but for more complex expressions,
+                    you may need to use special LaTeX commands.
+                </p>
+
+                <h2>Basic Identifiers and Numbers</h2>
+
+                <p>An identifier is a letter that's used to represent something in a mathematical expression (such as a
+                    constant or variable). Identifiers that use Latin letters, whether lowercase (a-z) or
+                    uppercase (A-Z), can just be written as-is in the expression. Identifiers that use Latin letters
+                    are,
+                    by convention, rendered as italic text, so, for example, with the following expression, <i>y</i>,
+                    <i>m</i>, <i>x</i>, and <i>c</i> are all identifiers, so will all be rendered as italic
+                    text, as below.</p>
+
+                <div class="codeexample">
+                    <code>y = mx + c</code>
+                    <math>$$y = mx + c$$</math>
+                </div>
+
+                <p>Integer and decimal numbers can be written using the digits 0-9. Use a period / full-stop to write a
+                    decimal point.</p>
+
+                <div class="codeexample">
+                    <code>234 + 56.78</code>
+                    <math>$$234 + 56.78$$</math>
+                </div>
+
+                <h2>Basic Operators</h2>
+
+                <p>Some basic operators, such as the plus and minus signs, don't require any special commands to write
+                    them, as below.</p>
+
+                <div class="codeexample">
+                    <code>2 + 3 - 4 = 1</code>
+                    <math>$$2 + 3 - 4 = 1$$</math>
+                </div>
+
+                <p>The <b>multiplication sign</b> (or the <b>times sign</b> or the <b>cross product sign</b>) can be
+                    added using the <code>\times</code> command, as below.</p>
+
+                <div class="codeexample">
+                    <code>2 \times 3 = 6</code>
+                    <math>$$2 \times 3 = 6$$</math>
+                </div>
+
+                <p>Note that using an asterisk (*) won't work. Also avoid using a lowercase x to denote multiplication,
+                    as this will be rendered as a variable.</p>
+
+                <p>If you want to denote multiplication using the <b>dot operator</b>, use the <code>\cdot</code>
+                    command ('cdot' is short for 'center dot').</p>
+
+                <div class="codeexample">
+                    <code>2 \cdot 3 = 6</code>
+                    <math>$$2 \cdot 3 = 6$$</math>
+                </div>
+
+                <p>The <b>division sign</b> (also called an <b>obelus</b>) can be added using the <code>\div</code>
+                    command.</p>
+
+                <div class="codeexample">
+                    <code>12 \div 4 = 3</code>
+                    <math>$$12 \div 4 = 3$$</math>
+                </div>
+
+                <h2>Equalities and Inequalities</h2>
+
+                <p>As we've already seen, the equals sign does not require a special command. The <b>less than</b> and
+                    <b>greater than</b> signs also do not require special commands, as below.</p>
+
+                <div class="codeexample">
+                    <code>x + 3 &lt; 10</code>
+                    <math>$$x + 3 &lt; 10$$</math>
+                </div>
+
+                <div class="codeexample">
+                    <code>y - 4 &gt; 8</code>
+                    <math>$$y - 4 &gt; 8$$</math>
+                </div>
+
+                <p>The <b>less than or equal to</b> and <b>greater than or equal to</b> signs, however, do require
+                    special commands. To write the <b>less than or equal to sign</b>, use the command <code>\leq</code>,
+                    and to write the <b>greater than or equal to sign</b>, use the command <code>\geq</code>, as below.
+                </p>
+
+                <div class="codeexample">
+                    <code>x + 3 \leq 10</code>
+                    <math>$$x + 3 \leq 10$$</math>
+                </div>
+
+                <div class="codeexample">
+                    <code>y - 4 \geq 8</code>
+                    <math>$$y - 4 \geq 8$$</math>
+                </div>
+
+                <h2>Fractions</h2>
+
+                <p>You can add fractions to mathematical expressions using the <code>\frac</code> command. The syntax
+                    for this command is as follows.
+                </p>
+
+                <div class="codeexample">
+                    <code>\frac{2}{3}</code>
+                    <math>$$\frac{2}{3}$$</math>
+                </div>
+
+                <p>The numerator of the fraction goes in the first set of brackets, and the denominator goes in the
+                    second set.</p>
+
+                <p>You can put any expression in the numerator and denominator, including other fractions.</p>
+
+                <div class="codeexample">
+                    <code>\frac{a + b + \frac{2}{5}}{mx}</code>
+                    <math>$$\frac{a + b + \frac{2}{5}}{mx}$$</math>
+                </div>
+
+                <h2>Superscripts</h2>
+
+                <p>Superscripts are used to denote exponents. You can write a superscript using the caret (^) character
+                    followed by the number or expression you want to superscript in brackets, as below.</p>
+
+                <div class="codeexample">
+                    <code>x^{2}</code>
+                    <math>$$x^{2}$$</math>
+                </div>
+
+                <div class="codeexample">
+                    <code>e^{x}</code>
+                    <math>$$e^{x}$$</math>
+                </div>
+
+                <h2>Subscripts</h2>
+
+                <p>Subscripts work in the same way as superscripts, but instead of the caret (^) use an underscore (_),
+                    as below.</p>
+
+                <div class="codeexample">
+                    <code>v_{x}</code>
+                    <math>$$v_{x}$$</math>
+                </div>
+
+                <p>You can combine subscripts and superscripts together by writing them one after another, as below.</p>
+
+                <div class="codeexample">
+                    <code>v_{x}^{2}</code>
+                    <math>$$v_{x}^{2}$$</math>
+                </div>
+
+                <h2>Square-roots and Cube-roots</h2>
+
+                <p>You can add square-roots to mathematical expressions using the <code>\sqrt</code> command. The syntax
+                    for this command is as follows.</p>
+
+                <div class="codeexample">
+                    <code>\sqrt{x}</code>
+                    <math>$$\sqrt{x}$$</math>
+                </div>
+
+                <p>You can add higher-degree roots by writing the degree of the root in <b>square brackets</b> just
+                    after the <code>\sqrt</code> command, as below.</p>
+
+                <div class="codeexample">
+                    <code>\sqrt[3]{x}</code>
+                    <math>$$\sqrt[3]{x}$$</math>
+                </div>
+
+                <div class="codeexample">
+                    <code>\sqrt[4]{x}</code>
+                    <math>$$\sqrt[4]{x}$$</math>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+</body>
+
+</html>
