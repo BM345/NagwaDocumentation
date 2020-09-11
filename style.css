@@ -249,7 +249,7 @@ a:hover {
      padding-left: 2em;
 }
 
-p code {
+p code, table code {
      display: inline-block;
      font-family: inherit;
      background-color: rgba(0, 0, 0, 0.2);
@@ -261,7 +261,7 @@ p code {
      font-weight: lighter;
 }
 
-.whitesection p code {
+.whitesection p code, .whitesection table code {
      color: black;
      background-color: rgba(0, 0, 0, 0.07);
      border: 1px solid rgba(0, 0, 0, 0.1);
@@ -280,7 +280,7 @@ code{
      text-align: center;
 
 }
-math{
+.math{
      display: block;
      padding: 0em 1em;
 }
@@ -291,8 +291,8 @@ math{
      margin: 1em 0em;
 }
 
-.codeexample code, .codeexample math{
-     min-width:300px;
+.codeexample code, .codeexample .math{
+     min-width:250px;
      flex-basis:1;
      flex-grow:1;
 }
@@ -302,13 +302,59 @@ math{
      border-bottom-left-radius: 2px;
      border-top-right-radius: 0px;
      border-bottom-right-radius: 0px;
-
+     position: relative;
+     padding-top: 45px;
 }
 
-.codeexample math{
+.codeexampletitle {
+     position: absolute; top: 0px; left: 0px;
+     font-family: 'Open Sans', sans-serif;
+     font-weight: normal;
+     font-size: 12.5px;
+      text-transform: uppercase;
+     color: #404040;
+   display: inline-block;
+    padding: 0.3em 0.5em;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom-right-radius: 2px;
+}
+
+.codeexample .math{
+     display: block;
      border-top: 1px solid rgba(0, 0, 0, 0.1);
      border-right: 1px solid rgba(0, 0, 0, 0.1);
      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
      border-top-right-radius: 2px;
      border-bottom-right-radius: 2px;
+     position: relative;
+     padding-top: 17px;
+}
+
+.tableofcommands {
+     border-collapse: collapse; 
+}
+
+.tableofcommands-headerrow{
+     border-bottom: 1px solid rgba(0, 0, 0, 0.2); 
+
+}
+
+.tableofcommands tr td{
+      padding: 0.2em 1em;  
+
+}
+
+.rightbordereven tr td:nth-child(even){
+     border-right: 1px solid rgba(0, 0, 0, 0.2);    
+
+}
+
+.rightborderall tr td{
+     border-right: 1px solid rgba(0, 0, 0, 0.2);    
+
+}
+
+.tableofcommands tr td .katex-display{
+     margin: 0em 0em;
 }

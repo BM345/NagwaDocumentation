@@ -24,6 +24,8 @@
         integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"
         onload="renderMathInElement(document.body);"></script>
 
+        <title>Adding mathematical expressions to questions</title>
+
 
 </head>
 
@@ -36,17 +38,45 @@
             <div class="textcolumn">
                 <h1>Adding mathematical expressions to questions</h1>
 
-                <p>
-                    You can add mathematical expressions to questions that you write using <code>&lt;math&gt;</code>
-                    tags.
-                </p>
+                <p>This document describes how you can add correctly-formatted mathematical expressions to questions that you write.</p>
 
-                <p>
-                    Place opening and closing <code>&lt;math&gt;</code> tags around each mathematical expression, like
-                    shown in the example below.
+                <h3 id="toc">Table of Contents</h3>
+
+                  <ul>
+                      <li><a href="#part1">The &lt;math&gt; Tag</a></li>
+                      <li><a href="#part2">Basic Identifiers and Numbers</a></li>
+                      <li><a href="#part3">Basic Operators</a></li>
+                   <li><a href="#part4">Equalities and Inequalities</a></li>
+                   <li><a href="#part5">Fractions</a></li>
+                   <li><a href="#part6">Superscripts</a></li>
+                   <li><a href="#part7">Subscripts</a></li>
+                   <li><a href="#part8">Square-roots and Cube-roots</a></li>
+                   <li><a href="#part8a">Brackets</a></li>
+                   <li><a href="#part9">Greek Letters</a></li>
+                   <li><a href="#part10">Trigonometric Functions</a></li>
+                   <li><a href="#part11">Logarithms</a></li>
+                  </ul>
+                </div>
+            </div>
+        </section>
+    
+    
+    
+    
+    
+        <section class="whitesection" id="part1">
+            <div class="centrecolumn">
+                <div class="textcolumn">
+                    <h2>The &lt;math&gt; Tag</h2>
+
+                    <p>In order to identify the mathematical expressions within the text of a question, enclose them in <code>&lt;math&gt;</code> tags.</p>
+
+                    <p>
+Place an 'opening' tag just before each expression, and a 'closing' tag just after each expression, as shown in the example below.
                 </p>
-                <code>
-        &lt;math&gt;y = 2x + 3&lt;/math&gt;
+                <code style="white-space: pre-line;">A line is described by the function 
+       &lt;math&gt;y = 2x + 3&lt;/math&gt;. What is the 
+       gradient of the line?
 </code>
 
                 <p>
@@ -57,50 +87,82 @@
                 </p>
 
                 <p>
-                    The mathematical expression needs to be written using LaTeX syntax. For simpler expressions, like
+                    The mathematical expression enclosed by the tags needs to be written using LaTeX syntax. For simpler expressions, like
                     the one shown above, often no special LaTeX commands are needed, but for more complex expressions,
                     you may need to use special LaTeX commands.
                 </p>
 
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section class="whitesection" id="part2">
+        <div class="centrecolumn">
+            <div class="textcolumn">
                 <h2>Basic Identifiers and Numbers</h2>
 
                 <p>An identifier is a letter that's used to represent something in a mathematical expression (such as a
-                    constant or variable). Identifiers that use Latin letters, whether lowercase (a-z) or
-                    uppercase (A-Z), can just be written as-is in the expression. Identifiers that use Latin letters
+                    constant or a variable). Identifiers that are Latin letters, whether lowercase (a-z) or
+                    uppercase (A-Z), can just be written as-is in the expression. Identifiers that are Latin letters
                     are,
                     by convention, rendered as italic text, so, for example, with the following expression, <i>y</i>,
                     <i>m</i>, <i>x</i>, and <i>c</i> are all identifiers, so will all be rendered as italic
                     text, as below.</p>
 
                 <div class="codeexample">
-                    <code>y = mx + c</code>
-                    <math>$$y = mx + c$$</math>
+                    <code>
+                        <span class="codeexampletitle">What you type</span>
+                        y = mx + c</code>
+                    <div class="math">
+                        <span class="codeexampletitle">How it will be rendered</span>
+                        $$y = mx + c$$</div>
                 </div>
 
                 <p>Integer and decimal numbers can be written using the digits 0-9. Use a period / full-stop to write a
                     decimal point.</p>
 
                 <div class="codeexample">
-                    <code>234 + 56.78</code>
-                    <math>$$234 + 56.78$$</math>
+                    <code>
+                        <span class="codeexampletitle">What you type</span>
+                        234 + 56.78</code>
+                        <div class="math">
+                            <span class="codeexampletitle">How it will be rendered</span>$$234 + 56.78$$</div>
                 </div>
+   </div>
+        </div>
+    </section>
 
+
+
+
+    
+    <section class="whitesection" id="part3">
+        <div class="centrecolumn">
+            <div class="textcolumn">
                 <h2>Basic Operators</h2>
 
                 <p>Some basic operators, such as the plus and minus signs, don't require any special commands to write
                     them, as below.</p>
 
                 <div class="codeexample">
-                    <code>2 + 3 - 4 = 1</code>
-                    <math>$$2 + 3 - 4 = 1$$</math>
+                    <code>  <span class="codeexampletitle">What you type</span>
+                        2 + 3 - 4 = 1</code>
+                        <div class="math">
+                            <span class="codeexampletitle">How it will be rendered</span>$$2 + 3 - 4 = 1$$</div>
                 </div>
 
                 <p>The <b>multiplication sign</b> (or the <b>times sign</b> or the <b>cross product sign</b>) can be
                     added using the <code>\times</code> command, as below.</p>
 
                 <div class="codeexample">
-                    <code>2 \times 3 = 6</code>
-                    <math>$$2 \times 3 = 6$$</math>
+                    <code><span class="codeexampletitle">What you type</span>
+                        2 \times 3 = 6</code>
+                        <div class="math">
+                            <span class="codeexampletitle">How it will be rendered</span>$$2 \times 3 = 6$$</div>
                 </div>
 
                 <p>Note that using an asterisk (*) won't work. Also avoid using a lowercase x to denote multiplication,
@@ -110,31 +172,49 @@
                     command ('cdot' is short for 'center dot').</p>
 
                 <div class="codeexample">
-                    <code>2 \cdot 3 = 6</code>
-                    <math>$$2 \cdot 3 = 6$$</math>
+                    <code><span class="codeexampletitle">What you type</span>
+                        2 \cdot 3 = 6</code>
+                        <div class="math">
+                            <span class="codeexampletitle">How it will be rendered</span>$$2 \cdot 3 = 6$$</div>
                 </div>
 
                 <p>The <b>division sign</b> (also called an <b>obelus</b>) can be added using the <code>\div</code>
                     command.</p>
 
                 <div class="codeexample">
-                    <code>12 \div 4 = 3</code>
-                    <math>$$12 \div 4 = 3$$</math>
+                    <code><span class="codeexampletitle">What you type</span>
+                        12 \div 4 = 3</code>
+                        <div class="math">
+                            <span class="codeexampletitle">How it will be rendered</span>$$12 \div 4 = 3$$</div>
                 </div>
+            </div>
+        </div>
+    </section>
 
+
+
+
+    
+    <section class="whitesection" id="part4">
+        <div class="centrecolumn">
+            <div class="textcolumn">
                 <h2>Equalities and Inequalities</h2>
 
                 <p>As we've already seen, the equals sign does not require a special command. The <b>less than</b> and
                     <b>greater than</b> signs also do not require special commands, as below.</p>
 
                 <div class="codeexample">
-                    <code>x + 3 &lt; 10</code>
-                    <math>$$x + 3 &lt; 10$$</math>
+                    <code><span class="codeexampletitle">What you type</span>
+                        x + 3 &lt; 10</code>
+                        <div class="math">
+                            <span class="codeexampletitle">How it will be rendered</span>$$x + 3 &lt; 10$$</div>
                 </div>
 
                 <div class="codeexample">
-                    <code>y - 4 &gt; 8</code>
-                    <math>$$y - 4 &gt; 8$$</math>
+                    <code><span class="codeexampletitle">What you type</span>
+                        y - 4 &gt; 8</code>
+                        <div class="math">
+                            <span class="codeexampletitle">How it will be rendered</span>$$y - 4 &gt; 8$$</div>
                 </div>
 
                 <p>The <b>less than or equal to</b> and <b>greater than or equal to</b> signs, however, do require
@@ -143,15 +223,29 @@
                 </p>
 
                 <div class="codeexample">
-                    <code>x + 3 \leq 10</code>
-                    <math>$$x + 3 \leq 10$$</math>
+                    <code><span class="codeexampletitle">What you type</span>
+                        x + 3 \leq 10</code>
+                        <div class="math">
+                            <span class="codeexampletitle">How it will be rendered</span>$$x + 3 \leq 10$$</div>
                 </div>
 
                 <div class="codeexample">
-                    <code>y - 4 \geq 8</code>
-                    <math>$$y - 4 \geq 8$$</math>
+                    <code><span class="codeexampletitle">What you type</span>
+                        y - 4 \geq 8</code>
+                        <div class="math">
+                            <span class="codeexampletitle">How it will be rendered</span>$$y - 4 \geq 8$$</div>
                 </div>
+            </div>
+        </div>
+    </section>
 
+
+
+
+    
+    <section class="whitesection" id="part5">
+        <div class="centrecolumn">
+            <div class="textcolumn">
                 <h2>Fractions</h2>
 
                 <p>You can add fractions to mathematical expressions using the <code>\frac</code> command. The syntax
@@ -159,8 +253,10 @@
                 </p>
 
                 <div class="codeexample">
-                    <code>\frac{2}{3}</code>
-                    <math>$$\frac{2}{3}$$</math>
+                    <code><span class="codeexampletitle">What you type</span>
+                        \frac{2}{3}</code>
+                        <div class="math">
+                            <span class="codeexampletitle">How it will be rendered</span>$$\frac{2}{3}$$</div>
                 </div>
 
                 <p>The numerator of the fraction goes in the first set of brackets, and the denominator goes in the
@@ -169,68 +265,509 @@
                 <p>You can put any expression in the numerator and denominator, including other fractions.</p>
 
                 <div class="codeexample">
-                    <code>\frac{a + b + \frac{2}{5}}{mx}</code>
-                    <math>$$\frac{a + b + \frac{2}{5}}{mx}$$</math>
+                    <code><span class="codeexampletitle">What you type</span>
+                        \frac{a + b + \frac{2}{5}}{mx}</code>
+                        <div class="math">
+                            <span class="codeexampletitle">How it will be rendered</span>$$\frac{a + b + \frac{2}{5}}{mx}$$</div>
                 </div>
+            </div>
+        </div>
+    </section>
 
+
+
+
+    
+    <section class="whitesection" id="part6">
+        <div class="centrecolumn">
+            <div class="textcolumn">
                 <h2>Superscripts</h2>
 
                 <p>Superscripts are used to denote exponents. You can write a superscript using the caret (^) character
                     followed by the number or expression you want to superscript in brackets, as below.</p>
 
                 <div class="codeexample">
-                    <code>x^{2}</code>
-                    <math>$$x^{2}$$</math>
+                    <code><span class="codeexampletitle">What you type</span>
+                        x^{2}</code>
+                        <div class="math">
+                            <span class="codeexampletitle">How it will be rendered</span>$$x^{2}$$</div>
                 </div>
 
                 <div class="codeexample">
-                    <code>e^{x}</code>
-                    <math>$$e^{x}$$</math>
+                    <code><span class="codeexampletitle">What you type</span>
+                        e^{x}</code>
+                        <div class="math">
+                            <span class="codeexampletitle">How it will be rendered</span>$$e^{x}$$</div>
                 </div>
+            </div>
+        </div>
+    </section>
 
+
+
+
+    
+    <section class="whitesection" id="part7">
+        <div class="centrecolumn">
+            <div class="textcolumn">
                 <h2>Subscripts</h2>
 
                 <p>Subscripts work in the same way as superscripts, but instead of the caret (^) use an underscore (_),
                     as below.</p>
 
                 <div class="codeexample">
-                    <code>v_{x}</code>
-                    <math>$$v_{x}$$</math>
+                    <code><span class="codeexampletitle">What you type</span>
+                        v_{x}</code>
+                        <div class="math">
+                            <span class="codeexampletitle">How it will be rendered</span>$$v_{x}$$</div>
                 </div>
 
                 <p>You can combine subscripts and superscripts together by writing them one after another, as below.</p>
 
                 <div class="codeexample">
-                    <code>v_{x}^{2}</code>
-                    <math>$$v_{x}^{2}$$</math>
+                    <code><span class="codeexampletitle">What you type</span>
+                        v_{x}^{2}</code>
+                        <div class="math">
+                            <span class="codeexampletitle">How it will be rendered</span>$$v_{x}^{2}$$</div>
                 </div>
+            </div>
+        </div>
+    </section>
 
+
+
+
+    
+    <section class="whitesection" id="part8">
+        <div class="centrecolumn">
+            <div class="textcolumn">
                 <h2>Square-roots and Cube-roots</h2>
 
                 <p>You can add square-roots to mathematical expressions using the <code>\sqrt</code> command. The syntax
                     for this command is as follows.</p>
 
                 <div class="codeexample">
-                    <code>\sqrt{x}</code>
-                    <math>$$\sqrt{x}$$</math>
+                    <code><span class="codeexampletitle">What you type</span>
+                        \sqrt{x}</code>
+                        <div class="math">
+                            <span class="codeexampletitle">How it will be rendered</span>$$\sqrt{x}$$</div>
                 </div>
 
                 <p>You can add higher-degree roots by writing the degree of the root in <b>square brackets</b> just
                     after the <code>\sqrt</code> command, as below.</p>
 
                 <div class="codeexample">
-                    <code>\sqrt[3]{x}</code>
-                    <math>$$\sqrt[3]{x}$$</math>
+                    <code><span class="codeexampletitle">What you type</span>
+                        \sqrt[3]{x}</code>
+                        <div class="math">
+                            <span class="codeexampletitle">How it will be rendered</span>$$\sqrt[3]{x}$$</div>
                 </div>
 
                 <div class="codeexample">
-                    <code>\sqrt[4]{x}</code>
-                    <math>$$\sqrt[4]{x}$$</math>
+                    <code><span class="codeexampletitle">What you type</span>
+                        \sqrt[4]{x}</code>
+                        <div class="math">
+                            <span class="codeexampletitle">How it will be rendered</span>$$\sqrt[4]{x}$$</div>
                 </div>
 
             </div>
         </div>
     </section>
+
+
+
+    
+    <section class="whitesection" id="part8a">
+        <div class="centrecolumn">
+            <div class="textcolumn">
+                <h2>Brackets</h2>
+                
+                <p>There are two ways to put brackets into a mathematical expression.</p>
+
+                <p>The first way is just to use the bracket characters (), as shown below.</p>
+                
+            <!---    <p>Writing round brackets () or square brackets [] in a mathematical expression doesn't require any special commands.</p>-->
+
+                <div class="codeexample">
+                    <code><span class="codeexampletitle">What you type</span>
+                        (x + 3) (x - 7)</code>
+                        <div class="math">
+                            <span class="codeexampletitle">How it will be rendered</span>$$(x + 3) (x - 7)$$</div>
+                </div>
+
+                  <!---  <div class="codeexample">
+                    <code><span class="codeexampletitle">What you type</span>
+                        [a, b]</code>
+                        <div class="math">
+                            <span class="codeexampletitle">How it will be rendered</span>$$[a, b]$$</div>
+                </div>   -->  
+
+                <p>While this is fine most of the time, brackets entered in this way won't stretch when their contents are taller than a single line, as shown with the fraction in the example below.</p>
+
+                <div class="codeexample">
+                    <code><span class="codeexampletitle">What you type</span>
+                        ( \frac{2}{3} )</code>
+                        <div class="math">
+                            <span class="codeexampletitle">How it will be rendered</span>$$( \frac{2}{3} )$$</div>
+                </div>     
+                
+                <p>This doesn't look very good. In order to have brackets that stretch to fit their contents, use the command <code>\left(</code> for a left round bracket, and the command <code>\right)</code> for a right round bracket.</p>
+                
+                <div class="codeexample">
+                    <code><span class="codeexampletitle">What you type</span>
+                        \left( \frac{2}{3} \right)</code>
+                        <div class="math">
+                            <span class="codeexampletitle">How it will be rendered</span>$$\left( \frac{2}{3} \right)$$</div>
+                </div>  
+                
+                
+            <!--    <p>Writing curly brackets {}, however, does. This is because, as we've seen, curly brackets are used in LaTeX syntax to group parts of the expression together, so they don't appear in the rendered mathematics. In order to get curly brackets to actually <i>appear</i> in the render, use the commands <code>\{</code> and <code>\}</code>, as below.</p>
+            
+            <div class="codeexample">
+                <code><span class="codeexampletitle">What you type</span>
+                    \{a, b\}</code>
+                    <div class="math">
+                        <span class="codeexampletitle">How it will be rendered</span>$$\{a, b\}$$</div>-->
+
+                        <p>Square brackets [] work in the same way, as shown below.</p>
+
+                <div class="codeexample">
+                    <code><span class="codeexampletitle">What you type</span>
+                        [a]</code>
+                        <div class="math">
+                            <span class="codeexampletitle">How it will be rendered</span>$$[a]$$</div>
+                </div>  
+                
+                <div class="codeexample">
+                    <code><span class="codeexampletitle">What you type</span>
+                        \left[ \frac{2a}{b} \right]</code>
+                        <div class="math">
+                            <span class="codeexampletitle">How it will be rendered</span>$$\left[ \frac{2a}{b} \right]$$</div>
+                </div>   
+            </div>   
+            </div>
+        </div>
+    </section>
+
+
+    
+    <section class="whitesection" id="part9">
+        <div class="centrecolumn">
+            <div class="textcolumn">
+                <h2>Greek Letters</h2>
+
+                <p>There is a set of special commands for adding Greek letters to mathematical expressions. Most of these commands are just a back slash (\) followed by the name of the letter.</p>
+
+             <div class="codeexample">
+                <code><span class="codeexampletitle">What you type</span>
+                    \omega</code>
+                    <div class="math">
+                        <span class="codeexampletitle">How it will be rendered</span>$$\omega$$</div>
+            </div>
+
+            <p>To write the uppercase variant of the Greek letter, use an uppercase letter at the start of the command, as below.</p>
+
+            <div class="codeexample">
+                <code><span class="codeexampletitle">What you type</span>
+                    \Omega</code>
+                    <div class="math">
+                        <span class="codeexampletitle">How it will be rendered</span>$$\Omega$$</div>
+            </div>
+
+     <p>Note that there are some Greek letters that look the same as some Latin letters. An example of this is uppercase eta, which looks the same as uppercase H. In these cases, there is no special command for the letter - just use the Latin letter.</p>
+
+     <p>The set of commands for Greek letters that are available is given in the table below.</p>
+
+        </div>
+        
+            <table class="tableofcommands rightborderall">
+                <tr class="tableofcommands-headerrow">
+                    <td></td>
+                    <td>Lowercase</td>
+                    <td>Uppercase</td>
+                </tr>
+                <tr>
+                    <td>Alpha</td>
+                    <td><code>\alpha</code></td>
+                   <td><code>A</code></td>                  
+                </tr>
+                <tr>
+                    <td>Beta</td>
+                    <td><code>\beta</code></td>
+                    <td><code>B</code></td>                  
+                </tr>
+                <tr>
+                    <td>Gamma</td>
+                    <td><code>\gamma</code></td>
+                    <td><code>\Gamma</code></td>                  
+                </tr>
+                <tr>
+                    <td>Delta</td>
+                    <td><code>\delta</code></td>
+                    <td><code>\Delta</code></td>                  
+                </tr>
+                <tr>
+                    <td>Epsilon</td>
+                    <td><code>\epsilon</code></td>
+                    <td><code>E</code></td>                  
+                </tr>
+                <tr>
+                    <td>Zeta</td>
+                    <td><code>\zeta</code></td>
+                    <td><code>Z</code></td>                  
+                </tr>
+                <tr>
+                    <td>Eta</td>
+                    <td><code>\eta</code></td>
+                    <td><code>H</code></td>                  
+                </tr>
+                <tr>
+                    <td>Theta</td>
+                    <td><code>\theta</code></td>
+                    <td><code>\Theta</code></td>                  
+                </tr>
+                <tr>
+                    <td>Iota</td>
+                    <td><code>\iota</code></td>
+                    <td><code>I</code></td>                  
+                </tr>
+                <tr>
+                    <td>Kappa</td>
+                    <td><code>\kappa</code></td>
+                    <td><code>K</code></td>                  
+                </tr>
+                <tr>
+                    <td>Lambda</td>
+                    <td><code>\lambda</code></td>
+                    <td><code>\Lambda</code></td>                  
+                </tr>
+                <tr>
+                    <td>Mu</td>
+                    <td><code>\mu</code></td>
+                    <td><code>M</code></td>                  
+                </tr>
+                <tr>
+                    <td>Nu</td>
+                    <td><code>\nu</code></td>
+                    <td><code>N</code></td>                  
+                </tr>
+                <tr>
+                    <td>Xi</td>
+                    <td><code>\xi</code></td>
+                    <td><code>\Xi</code></td>                  
+                </tr>
+                <tr>
+                    <td>Omicron</td>
+                    <td><code>\omicron</code></td>
+                    <td><code>\Omicron</code></td>                  
+                </tr>
+                <tr>
+                    <td>Pi</td>
+                    <td><code>\pi</code></td>
+                    <td><code>\Pi</code></td>                  
+                </tr>
+                <tr>
+                    <td>Rho</td>
+                    <td><code>\rho</code></td>
+                    <td><code>P</code></td>                  
+                </tr>
+                <tr>
+                    <td>Sigma</td>
+                    <td><code>\sigma</code></td>
+                    <td><code>\Sigma</code></td>                  
+                </tr>
+                <tr>
+                    <td>Tau</td>
+                    <td><code>\tau</code></td>
+                    <td><code>T</code></td>                  
+                </tr>
+                <tr>
+                    <td>Upsilon</td>
+                    <td><code>\upsilon</code></td>
+                    <td><code>\Upsilon</code></td>                  
+                </tr>
+                <tr>
+                    <td>Phi</td>
+                    <td><code>\phi</code></td>
+                    <td><code>\Phi</code></td>                  
+                </tr>
+                <tr>
+                    <td>Chi</td>
+                    <td><code>\chi</code></td>
+                    <td><code>X</code></td>                  
+                </tr>
+                <tr>
+                    <td>Psi</td>
+                    <td><code>\psi</code></td>
+                    <td><code>\Psi</code></td>                  
+                </tr>
+                <tr>
+                    <td>Omega</td>
+                    <td><code>\omega</code></td>
+                    <td><code>\Omega</code></td>                  
+                </tr>
+              
+            </table>
+            <div class="textcolumn">
+                <p>Some lowercase Greek letters also have <b>variant forms</b>. The commands for these variant forms are given in the table below.</p>
+        </div>
+        <table class="tableofcommands rightborderall">
+           
+            <tr>
+                <td>Epsilon Variant</td>
+                <td><code>\varepsilon</code></td>
+               <td>$$\varepsilon$$</td>                  
+            </tr>
+            <tr>
+                <td>Theta Variant</td>
+                <td><code>\vartheta</code></td>
+               <td>$$\vartheta$$</td>                  
+            </tr>
+            <tr>
+                <td>Pi Variant</td>
+                <td><code>\varpi</code></td>
+               <td>$$\varpi$$</td>                  
+            </tr>
+            <tr>
+                <td>Rho Variant</td>
+                <td><code>\varrho</code></td>
+               <td>$$\varrho$$</td>                  
+            </tr>
+            <tr>
+                <td>Sigma Variant</td>
+                <td><code>\varsigma</code></td>
+               <td>$$\varsigma$$</td>                  
+            </tr>
+            <tr>
+                <td>Phi Variant</td>
+                <td><code>\varphi</code></td>
+               <td>$$\varphi$$</td>                  
+            </tr>
+          
+          
+        </table>
+
+        </div>
+    </section>
+    
+    <section class="whitesection" id="part10">
+        <div class="centrecolumn">
+            <div class="textcolumn">
+             <h2>Trigonometric Functions</h2>
+
+             <p>There is a set of special commands for adding correctly-formatted trigonometric functions to mathematical expressions. Function names are by convention not italicised, so you can't just write <code>sin</code> or <code>cos</code> in the expression, as the letters will be recognised as identifiers, and rendered in italics. Instead, you have to use commands like <code>\sin</code> and <code>\cos</code>, as below.</p>
+
+             <div class="codeexample">
+                <code><span class="codeexampletitle">What you type</span>
+                    \sin (\theta)</code>
+                    <div class="math">
+                        <span class="codeexampletitle">How it will be rendered</span>$$\sin (\theta)$$</div>
+            </div>
+
+            <div class="codeexample">
+                <code><span class="codeexampletitle">What you type</span>
+                    \cos \theta</code>
+                    <div class="math">
+                        <span class="codeexampletitle">How it will be rendered</span>$$\cos \theta$$</div>
+            </div>
+
+            <p>The set of commands for trigonometric functions that are available is given in the table below.</p>
+
+        </div>
+
+            <table class="tableofcommands rightbordereven">
+                <tr>
+                    <td>Sine</td>
+                    <td><code>\sin</code></td>
+                    <td>Arcsine</td>
+                    <td><code>\arcsin</code></td>
+                    <td>Hyperbolic Sine</td>
+                    <td><code>\sinh</code></td>
+                </tr>
+                <tr>
+                    <td>Cosine</td>
+                    <td><code>\cos</code></td>
+                    <td>Arccosine</td>
+                    <td><code>\arccos</code></td>
+                    <td>Hyperbolic Cosine</td>
+                    <td><code>\cosh</code></td>
+    </tr>
+                <tr>
+                    <td>Tangent</td>
+                    <td><code>\tan</code></td>
+                    <td>Arctangent</td>
+                    <td><code>\arctan</code></td>
+                    <td>Hyperbolic Tangent</td>
+                    <td><code>\tanh</code></td>
+                </tr>
+                <tr>
+                    <td>Secant</td>
+                    <td><code>\sec</code></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+           </tr>
+                <tr>
+                    <td>Cosecant</td>
+                    <td><code>\csc</code></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  
+                </tr>
+                <tr>
+                    <td>Cotangent</td>
+                    <td><code>\cot</code></td>
+                    <td></td>
+                    <td></td>
+                    <td>Hyperbolic Cotangent</td>
+                    <td><code>\coth</code></td>
+                </tr>
+            </table>
+
+        </div>
+    </section>
+
+    <section class="whitesection" id="part11">
+        <div class="centrecolumn">
+            <div class="textcolumn">
+                   <h2>Logarithms</h2>
+           
+                   <p>To add a logarithm to a mathematical expression, use the syntax below.</p>
+
+             <div class="codeexample">
+                <code><span class="codeexampletitle">What you type</span>
+                    \log_{10} (x)</code>
+                    <div class="math">
+                        <span class="codeexampletitle">How it will be rendered</span>$$\log_{10} (x)$$</div>
+            </div>
+
+            <p>The command <code>\log</code> produces the word 'log' in non-italic script. Use the subscript syntax (<a href="#part7">described above</a>) to write the base of the logarithm (or leave it out if you want the base to be implicit).</p>
+
+            <p>You can also use the command <code>\lg</code> if you prefer it to <code>\log</code>.</p>
+
+            <div class="codeexample">
+                <code><span class="codeexampletitle">What you type</span>
+                    \lg_{10} (x)</code>
+                    <div class="math">
+                        <span class="codeexampletitle">How it will be rendered</span>$$\lg_{10} (x)$$</div>
+            </div>
+
+            <p>To write the natural logarithm - a logarithm with a base of <i>e</i>, Euler's Number - use the command <code>\ln</code>.</p>
+
+            <div class="codeexample">
+                <code><span class="codeexampletitle">What you type</span>
+                    \ln (x)</code>
+                    <div class="math">
+                        <span class="codeexampletitle">How it will be rendered</span>$$\ln (x)$$</div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
 
 
 
