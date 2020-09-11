@@ -443,7 +443,25 @@ Place an 'opening' tag just before each expression, and a 'closing' tag just aft
                         \left[ \frac{2a}{b} \right]</code>
                         <div class="math">
                             <span class="codeexampletitle">How it will be rendered</span>$$\left[ \frac{2a}{b} \right]$$</div>
-                </div>   
+                </div>  
+                
+                <p>As we've already seen, curly brackets {} are used in the LaTeX syntax to group together parts of the mathematical expression, and so aren't shown in the render. In order to get curly brackets to actually <i>appear</i> in the render, use the commands <code>\{</code> and <code>\}</code>, as below.</p>
+
+                <div class="codeexample">
+                    <code><span class="codeexampletitle">What you type</span>
+                        \{ a, b \}</code>
+                        <div class="math">
+                            <span class="codeexampletitle">How it will be rendered</span>$$\{ a, b \}$$</div>
+                </div>  
+
+                <p>In order to get curly brackets that stretch, use <code>\left\{</code> and <code>\right\}</code>.</p>
+
+                <div class="codeexample">
+                    <code><span class="codeexampletitle">What you type</span>
+                        \left\{ \frac{2a}{b} \right\}</code>
+                        <div class="math">
+                            <span class="codeexampletitle">How it will be rendered</span>$$\left\{ \frac{2a}{b} \right\}$$</div>
+                </div>  
             </div>   
             </div>
         </div>
