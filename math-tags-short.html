@@ -381,12 +381,8 @@ Place an 'opening' tag just before each expression, and a 'closing' tag just aft
         <div class="centrecolumn">
             <div class="textcolumn">
                 <h2>Brackets</h2>
-                
-                <p>There are two ways to put brackets into a mathematical expression.</p>
 
-                <p>The first way is just to use the bracket characters (), as shown below.</p>
-                
-            <!---    <p>Writing round brackets () or square brackets [] in a mathematical expression doesn't require any special commands.</p>-->
+  <p>Most of the time, writing round brackets () or square brackets [] in a mathematical expression doesn't require any special commands.</p>
 
                 <div class="codeexample">
                     <code><span class="codeexampletitle">What you type</span>
@@ -395,56 +391,13 @@ Place an 'opening' tag just before each expression, and a 'closing' tag just aft
                             <span class="codeexampletitle">How it will be rendered</span>$$(x + 3) (x - 7)$$</div>
                 </div>
 
-                  <!---  <div class="codeexample">
-                    <code><span class="codeexampletitle">What you type</span>
-                        [a, b]</code>
-                        <div class="math">
-                            <span class="codeexampletitle">How it will be rendered</span>$$[a, b]$$</div>
-                </div>   -->  
-
-                <p>While this is fine most of the time, brackets entered in this way won't stretch when their contents are taller than a single line, as shown with the fraction in the example below.</p>
-
-                <div class="codeexample">
-                    <code><span class="codeexampletitle">What you type</span>
-                        ( \frac{2}{3} )</code>
-                        <div class="math">
-                            <span class="codeexampletitle">How it will be rendered</span>$$( \frac{2}{3} )$$</div>
-                </div>     
-                
-                <p>This doesn't look very good. In order to have brackets that stretch to fit their contents, use the command <code>\left(</code> for a left round bracket, and the command <code>\right)</code> for a right round bracket.</p>
-                
-                <div class="codeexample">
-                    <code><span class="codeexampletitle">What you type</span>
-                        \left( \frac{2}{3} \right)</code>
-                        <div class="math">
-                            <span class="codeexampletitle">How it will be rendered</span>$$\left( \frac{2}{3} \right)$$</div>
-                </div>  
-                
-                
-            <!--    <p>Writing curly brackets {}, however, does. This is because, as we've seen, curly brackets are used in LaTeX syntax to group parts of the expression together, so they don't appear in the rendered mathematics. In order to get curly brackets to actually <i>appear</i> in the render, use the commands <code>\{</code> and <code>\}</code>, as below.</p>
-            
-            <div class="codeexample">
-                <code><span class="codeexampletitle">What you type</span>
-                    \{a, b\}</code>
-                    <div class="math">
-                        <span class="codeexampletitle">How it will be rendered</span>$$\{a, b\}$$</div>-->
-
-                        <p>Square brackets [] work in the same way, as shown below.</p>
-
                 <div class="codeexample">
                     <code><span class="codeexampletitle">What you type</span>
                         [a]</code>
                         <div class="math">
                             <span class="codeexampletitle">How it will be rendered</span>$$[a]$$</div>
                 </div>  
-                
-                <div class="codeexample">
-                    <code><span class="codeexampletitle">What you type</span>
-                        \left[ \frac{2a}{b} \right]</code>
-                        <div class="math">
-                            <span class="codeexampletitle">How it will be rendered</span>$$\left[ \frac{2a}{b} \right]$$</div>
-                </div>  
-                
+
                 <p>As we've already seen, curly brackets {} are used in the LaTeX syntax to group together parts of the mathematical expression, and so aren't shown in the render. In order to get curly brackets to actually <i>appear</i> in the render, use the commands <code>\{</code> and <code>\}</code>, as below.</p>
 
                 <div class="codeexample">
@@ -454,14 +407,39 @@ Place an 'opening' tag just before each expression, and a 'closing' tag just aft
                             <span class="codeexampletitle">How it will be rendered</span>$$\{ a, b \}$$</div>
                 </div>  
 
-                <p>In order to get curly brackets that stretch, use <code>\left\{</code> and <code>\right\}</code>.</p>
 
+                <p>By default, brackets won't stretch when their contents are taller than a single line, as shown in the example below.</p>
+
+                <div class="codeexample">
+                    <code><span class="codeexampletitle">What you type</span>
+                        ( \frac{2}{3} )</code>
+                        <div class="math">
+                            <span class="codeexampletitle">How it will be rendered</span>$$( \frac{2}{3} )$$</div>
+                </div>     
+                
+                <p>This doesn't look very good. In order to have the brackets stretch to fit their contents, use the command <code>\left</code> just before the opening bracket, and the command <code>\right</code> just before the closing bracket.</p>
+                
+                <div class="codeexample">
+                    <code><span class="codeexampletitle">What you type</span>
+                        \left( \frac{2}{3} \right)</code>
+                        <div class="math">
+                            <span class="codeexampletitle">How it will be rendered</span>$$\left( \frac{2}{3} \right)$$</div>
+                </div>  
+
+                <div class="codeexample">
+                    <code><span class="codeexampletitle">What you type</span>
+                        \left[ \frac{2a}{b} \right]</code>
+                        <div class="math">
+                            <span class="codeexampletitle">How it will be rendered</span>$$\left[ \frac{2a}{b} \right]$$</div>
+                </div>  
+                
                 <div class="codeexample">
                     <code><span class="codeexampletitle">What you type</span>
                         \left\{ \frac{2a}{b} \right\}</code>
                         <div class="math">
                             <span class="codeexampletitle">How it will be rendered</span>$$\left\{ \frac{2a}{b} \right\}$$</div>
                 </div>  
+             
             </div>   
             </div>
         </div>
