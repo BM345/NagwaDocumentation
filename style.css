@@ -358,3 +358,7 @@ code{
 .tableofcommands tr td .katex-display{
      margin: 0em 0em;
 }
+
+.tableofcommands tr.borderabove{
+     border-top: 1px solid rgba(0, 0, 0, 0.2);   
+}
