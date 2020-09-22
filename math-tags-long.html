@@ -24,52 +24,48 @@
         integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"
         onload="renderMathInElement(document.body);"></script>
 
-        <title>More complex mathematical expressions</title>
-
+    <title>More complex mathematical expressions</title>
 
 </head>
 
 <body>
-
-
 
     <section class="whitesection" id="part0">
         <div class="centrecolumn">
             <div class="textcolumn">
                 <h1>More complex mathematical expressions</h1>
 
-                <p>This document describes how you can add various more complex mathematical expressions to questions that you write.</p>
+                <p>This document describes how you can add various more complex mathematical expressions to questions
+                    that you write.</p>
 
                 <h3 id="toc">Table of Contents</h3>
 
-                  <ul>
-                      <li><a href="#part1">Arrows</a></li>
-                      <li><a href="#part2">Limits</a></li>
-                      <li><a href="#part3">Sums and Products</a></li>
-                      <li><a href="#part4">Derivatives</a></li>
-                      <li><a href="#part5">Integrals</a></li>
-                      <li><a href="#part6">Vectors</a></li>
-                      <li><a href="#part7">Diacritics</a></li>
-                      <li><a href="#part8">Other Brackets and Delimiters</a></li>
-                      <li><a href="#part9">Set Theory</a></li>
-                  </ul>
-                </div>
+                <ul>
+                    <li><a href="#part1">Arrows</a></li>
+                    <li><a href="#part2">Limits</a></li>
+                    <li><a href="#part3">Sums and Products</a></li>
+                    <li><a href="#part4">Derivatives</a></li>
+                    <li><a href="#part5">Integrals</a></li>
+                    <li><a href="#part6">Vectors</a></li>
+                    <li><a href="#part7">Diacritics</a></li>
+                    <li><a href="#part8">Other Brackets and Delimiters</a></li>
+                    <li><a href="#part9">Set Theory</a></li>
+                </ul>
             </div>
-        </section>
-    
-    
-    
-    
-    
-    
-    
-    
+        </div>
+    </section>
+
+
+
+
+
     <section class="whitesection" id="part1">
         <div class="centrecolumn">
             <div class="textcolumn">
                 <h2>Arrows</h2>
-        
-                <p>There are a number of commands available for adding arrows to mathematical expressions. These are given in the table below.</p>
+
+                <p>There are a number of commands available for adding arrows to mathematical expressions. These are
+                    given in the table below.</p>
 
                 <table class="tableofcommands rightborderall">
                     <tr>
@@ -82,9 +78,9 @@
                         <td><code>\nrightarrow</code></td>
                         <td>$$\nrightarrow$$</td>
                     </tr>
-                <tr>
-                    <td>Long Right Arrow</td>
-                    <td><code>\longrightarrow</code></td>
+                    <tr>
+                        <td>Long Right Arrow</td>
+                        <td><code>\longrightarrow</code></td>
                         <td>$$\longrightarrow$$</td>
                     </tr>
                     <tr class="borderabove">
@@ -97,9 +93,9 @@
                         <td><code>\nRightarrow</code></td>
                         <td>$$\nRightarrow$$</td>
                     </tr>
-    <tr>
-        <td>Long Double Right Arrow</td>
-        <td><code>\Longrightarrow</code></td>
+                    <tr>
+                        <td>Long Double Right Arrow</td>
+                        <td><code>\Longrightarrow</code></td>
                         <td>$$\Longrightarrow$$</td>
                     </tr>
                     <tr class="borderabove">
@@ -124,7 +120,7 @@
                     </tr>
                     <tr>
                         <td>Double Left Arrow With Slash</td>
-              <td><code>\nLeftarrow</code></td>
+                        <td><code>\nLeftarrow</code></td>
                         <td>$$\nLeftarrow$$</td>
                     </tr>
                     <tr>
@@ -202,626 +198,669 @@
                         <td><code>\Updownarrow</code></td>
                         <td>$$\Updownarrow$$</td>
                     </tr>
-                   
                 </table>
 
+            </div>
         </div>
-    </div>
-</section>   
-
-    
-<section class="whitesection" id="part2">
-    <div class="centrecolumn">
-        <div class="textcolumn">
-            <h2>Limits</h2>
-
-            <p>To put limit notation into an expression, use the command <code>\lim</code> followed by a subscript, as shown below.</p>
-
-<div class="codeexample">
-    <code>
-        <span class="codeexampletitle">What you type</span>
-        \lim_{x \rightarrow c} f(x) = L</code>
-    <div class="math">
-        <span class="codeexampletitle">How it will be rendered</span>
-        $$\lim_{x \rightarrow c} f(x) = L$$</div>
-</div>
-
-<p>While subscripts are normally rendered to the bottom right of the preceding symbol, when written after a <code>\lim</code> command, a subscript is automatically placed underneath the limit sign.</p>
-
-<p>Use the command <code>\infty</code> to write the infinity symbol.</p>
-    
-
-<div class="codeexample">
-    <code>
-        <span class="codeexampletitle">What you type</span>
-        \lim_{x \rightarrow \infty} f(x) = L</code>
-    <div class="math">
-        <span class="codeexampletitle">How it will be rendered</span>
-        $$\lim_{x \rightarrow \infty} f(x) = L$$</div>
-</div>
-
-<p>To denote the limit inferior and the limit superior of a sequence, use the commands <code>\liminf</code> and <code>\limsup</code>.</p>
-
-<div class="codeexample">
-    <code>
-        <span class="codeexampletitle">What you type</span>
-        \liminf_{n \rightarrow \infty} x_{n}</code>
-    <div class="math">
-        <span class="codeexampletitle">How it will be rendered</span>
-        $$\liminf_{n \rightarrow \infty} x_{n}$$</div>
-</div>
-
-<div class="codeexample">
-    <code>
-        <span class="codeexampletitle">What you type</span>
-        \limsup_{n \rightarrow \infty} x_{n}</code>
-    <div class="math">
-        <span class="codeexampletitle">How it will be rendered</span>
-        $$\limsup_{n \rightarrow \infty} x_{n}$$</div>
-</div>
-
-<p>You can also use the commands <code>\inf</code> and <code>\sup</code> for just the abbreviations 'inf' and 'sup' on their own.</p>
-
-    </div>
-</div>
-</section>  
-
- 
-    
-<section class="whitesection" id="part3">
-    <div class="centrecolumn">
-        <div class="textcolumn">
-            <h2>Sums and Products</h2>
-
-            <p>The summation sign is of course a capital letter sigma, but since it's drawn larger than a normal sigma, we can't just use the command <code>\Sigma</code>. Instead, use the command <code>\sum</code>. Use a subscript and a superscript to denote the lower and upper bounds of the sum.</p>
-    
-<div class="codeexample">
-    <code>
-        <span class="codeexampletitle">What you type</span>
-        \sum_{i = m}^{n} a_{i}</code>
-    <div class="math">
-        <span class="codeexampletitle">How it will be rendered</span>
-        $$\sum_{i \,=\, m}^{n} a_{i}$$</div>
-</div>
-
-<p>Similarly, the product sign is a capital letter pi, but it's drawn larger than a normal pi, so use the command <code>\prod</code>.</p>
-
-<div class="codeexample">
-    <code>
-        <span class="codeexampletitle">What you type</span>
-        \prod_{i = m}^{n} a_{i}</code>
-    <div class="math">
-        <span class="codeexampletitle">How it will be rendered</span>
-        $$\prod_{i \,=\, m}^{n} a_{i}$$</div>
-</div>
-
-    </div>
-</div>
-</section>
-    
-    
-<section class="whitesection" id="part4">
-    <div class="centrecolumn">
-        <div class="textcolumn">
-            <h2>Derivatives</h2>
-
-            <p>When trying to add a derivative to a mathematical expression, it would be tempting to type the following.</p>
-
-            <div class="codeexample">
-                <code>
-                    <span class="codeexampletitle">What you type</span>
-                    \frac{dx}{dt}</code>
-                <div class="math">
-                    <span class="codeexampletitle">How it will be rendered</span>
-                    $$\frac{dx}{dt}$$</div>
-          </div>
-        
-        <p>However, in a derivative, the d's aren't supposed to be italicised, because they aren't identifiers. In order to get the d's to be non-italicised, use the command <code>\mathrm{d}</code>, as below.</p>
-
-        <div class="codeexample">
-            <code>
-                <span class="codeexampletitle">What you type</span>
-                \frac{\mathrm{d} x}{\mathrm{d} t}</code>
-            <div class="math">
-                <span class="codeexampletitle">How it will be rendered</span>
-                $$\frac{\mathrm{d} x}{\mathrm{d} t}$$</div>
-      </div>
-
-      <p>Use superscripts to denote higher-order derivatives.</p>
-
-      <div class="codeexample">
-        <code>
-            <span class="codeexampletitle">What you type</span>
-            \frac{\mathrm{d}^{2} x}{\mathrm{d} t^{2}}</code>
-        <div class="math">
-            <span class="codeexampletitle">How it will be rendered</span>
-            $$\frac{\mathrm{d}^{2} x}{\mathrm{d} t^{2}}$$</div>
-  </div>
-
-      <p>That's how to write full derivatives. To write partial derivatives, use the command <code>\partial</code> instead of <code>\mathrm{d}</code> to get the curly d.</p>
-
-      <div class="codeexample">
-        <code>
-            <span class="codeexampletitle">What you type</span>
-            \frac{\partial f}{\partial t}</code>
-        <div class="math">
-            <span class="codeexampletitle">How it will be rendered</span>
-            $$\frac{\partial f}{\partial t}$$</div>
-  </div>
-        </div></div>
-</section>
-    
-    
-<section class="whitesection" id="part5">
-    <div class="centrecolumn">
-        <div class="textcolumn">
-        
-            <h2>Integrals</h2>
-
-            <p>Use the command <code>\int</code> to write the integral sign. As with <a href="#part4">derivatives</a> described above, the d of the infinitesimal element needs to be non-italicised. To do this, use <code>\mathrm{d}</code>.</p>
-        
-            <div class="codeexample">
-                <code>
-                    <span class="codeexampletitle">What you type</span>
-                    \int p(x) \mathrm{d} x</code>
-                <div class="math">
-                    <span class="codeexampletitle">How it will be rendered</span>
-                    $$\int p(x) \, \mathrm{d} x$$</div>
-          </div>
-
-          <p>Use subscripts and superscripts to denote the limits of an integral.</p>
-
-          <div class="codeexample">
-            <code>
-                <span class="codeexampletitle">What you type</span>
-                \int_{0}^{3} p(x) \mathrm{d} x</code>
-            <div class="math">
-                <span class="codeexampletitle">How it will be rendered</span>
-                $$\int_{0}^{3} p(x) \, \mathrm{d} x$$</div>
-      </div>
-
-      <p>You can use the commands <code>\iint</code> and <code>\iiint</code> for double and triple integrals.</p>
-
-      <div class="codeexample">
-        <code>
-            <span class="codeexampletitle">What you type</span>
-            \iint p(x, y) \mathrm{d} x \mathrm{d} y</code>
-        <div class="math">
-            <span class="codeexampletitle">How it will be rendered</span>
-            $$\iint p(x, y) \, \mathrm{d} x \, \mathrm{d} y$$</div>
-  </div>
-
-  <div class="codeexample">
-    <code>
-        <span class="codeexampletitle">What you type</span>
-        \iiint p(x, y, z) \mathrm{d} x \mathrm{d} y \mathrm{d} z</code>
-    <div class="math">
-        <span class="codeexampletitle">How it will be rendered</span>
-        $$\iiint p(x, y, z) \, \mathrm{d} x \, \mathrm{d} y \, \mathrm{d} z$$</div>
-</div>
-
-<p>You can use the commands <code>\oint</code> and <code>\oiint</code> for single and double closed integrals.</p>
-
-<div class="codeexample">
-    <code>
-        <span class="codeexampletitle">What you type</span>
-        \oint p(x) \mathrm{d} x</code>
-    <div class="math">
-        <span class="codeexampletitle">How it will be rendered</span>
-        $$\oint p(x) \, \mathrm{d} x$$</div>
-</div>
+    </section>
 
 
-<div class="codeexample">
-    <code>
-        <span class="codeexampletitle">What you type</span>
-        \oiint p(x, y) \mathrm{d} x \mathrm{d} y</code>
-    <div class="math">
-        <span class="codeexampletitle">How it will be rendered</span>
-        $$\oiint p(x, y) \, \mathrm{d} x \, \mathrm{d} y$$</div>
-</div>
+
+
+
+    <section class="whitesection" id="part2">
+        <div class="centrecolumn">
+            <div class="textcolumn">
+                <h2>Limits</h2>
+
+                <p>To put limit notation into an expression, use the command <code>\lim</code> followed by a subscript,
+                    as shown below.</p>
+
+                <div class="codeexample">
+                    <code>
+                        <span class="codeexampletitle">What you type</span>
+                        \lim_{x \rightarrow c} f(x) = L</code>
+                    <div class="math">
+                        <span class="codeexampletitle">How it will be rendered</span>
+                        $$\lim_{x \rightarrow c} f(x) = L$$</div>
+                </div>
+
+                <p>While subscripts are normally rendered to the bottom right of the preceding symbol, when written
+                    after a <code>\lim</code> command, a subscript is automatically placed underneath the limit sign.
+                </p>
+
+                <p>Use the command <code>\infty</code> to write the infinity symbol.</p>
+
+                <div class="codeexample">
+                    <code>
+                        <span class="codeexampletitle">What you type</span>
+                        \lim_{x \rightarrow \infty} f(x) = L</code>
+                    <div class="math">
+                        <span class="codeexampletitle">How it will be rendered</span>
+                        $$\lim_{x \rightarrow \infty} f(x) = L$$</div>
+                </div>
+
+                <p>To denote the limit inferior and the limit superior of a sequence, use the commands
+                    <code>\liminf</code> and <code>\limsup</code>.</p>
+
+                <div class="codeexample">
+                    <code>
+                        <span class="codeexampletitle">What you type</span>
+                        \liminf_{n \rightarrow \infty} x_{n}</code>
+                    <div class="math">
+                        <span class="codeexampletitle">How it will be rendered</span>
+                        $$\liminf_{n \rightarrow \infty} x_{n}$$</div>
+                </div>
+
+                <div class="codeexample">
+                    <code>
+                        <span class="codeexampletitle">What you type</span>
+                        \limsup_{n \rightarrow \infty} x_{n}</code>
+                    <div class="math">
+                        <span class="codeexampletitle">How it will be rendered</span>
+                        $$\limsup_{n \rightarrow \infty} x_{n}$$</div>
+                </div>
+
+                <p>You can also use the commands <code>\inf</code> and <code>\sup</code> for just the abbreviations
+                    'inf' and 'sup' on their own.</p>
+
+            </div>
         </div>
-</div>
-</section>
-    
-   
-    
-    
-<section class="whitesection" id="part6">
-    <div class="centrecolumn">
-        <div class="textcolumn">
-<h2>Vectors</h2> 
-
-    <p>In digital and print media, vectors are, by convention, styled using bold font. To put something in bold font, use the command <code>\textbf</code>.</p>
-
-<div class="codeexample">
-    <code>
-        <span class="codeexampletitle">What you type</span>
-        \textbf{v}</code>
-    <div class="math">
-        <span class="codeexampletitle">How it will be rendered</span>
-        $$\textbf{v}$$</div>
-</div>      
-
-<p>Put any subscripts and superscripts <b>outside</b> of the brackets of the <code>\textbf</code> command.</p>
+    </section>
 
 
-<div class="codeexample">
-    <code>
-        <span class="codeexampletitle">What you type</span>
-        \textbf{v}_{x}, \textbf{v}_{y}</code>
-    <div class="math">
-        <span class="codeexampletitle">How it will be rendered</span>
-        $$\textbf{v}_{x}, \textbf{v}_{y}$$</div>
-</div>  
 
-<p>Unit vectors are denoted by a circumflex, or 'hat', over the identifier. Use the <code>\hat</code> command to do this. Furthermore, typically, for i and j unit vectors, the dot above each letter is removed. Use the commands <code>\i</code> and <code>\j</code> to get these variants of the letters.</p>
 
-<div class="codeexample">
-    <code>
-        <span class="codeexampletitle">What you type</span>
-        \hat{\textbf{\i}}</code>
-    <div class="math">
-        <span class="codeexampletitle">How it will be rendered</span>
-        $$\hat{\textbf{\i}}$$</div>
-</div>  
 
-<div class="codeexample">
-    <code>
-        <span class="codeexampletitle">What you type</span>
-        \hat{\textbf{\j}}</code>
-    <div class="math">
-        <span class="codeexampletitle">How it will be rendered</span>
-        $$\hat{\textbf{\j}}$$</div>
-</div>  
+    <section class="whitesection" id="part3">
+        <div class="centrecolumn">
+            <div class="textcolumn">
+                <h2>Sums and Products</h2>
 
-<div class="codeexample">
-    <code>
-        <span class="codeexampletitle">What you type</span>
-        \hat{\textbf{k}}</code>
-    <div class="math">
-        <span class="codeexampletitle">How it will be rendered</span>
-        $$\hat{\textbf{k}}$$</div>
-</div>  
+                <p>The summation sign is of course a capital letter sigma, but since it's drawn larger than a normal
+                    sigma, we can't just use the command <code>\Sigma</code>. Instead, use the command
+                    <code>\sum</code>. Use a subscript and a superscript to denote the lower and upper bounds of the
+                    sum.</p>
 
-<p>Use the <code>\cdot</code> command to denote the dot product.</p>
+                <div class="codeexample">
+                    <code>
+                        <span class="codeexampletitle">What you type</span>
+                        \sum_{i = m}^{n} a_{i}</code>
+                    <div class="math">
+                        <span class="codeexampletitle">How it will be rendered</span>
+                        $$\sum_{i \,=\, m}^{n} a_{i}$$</div>
+                </div>
 
-<div class="codeexample">
-    <code>
-        <span class="codeexampletitle">What you type</span>
-        \textbf{A} \cdot \textbf{B}</code>
-    <div class="math">
-        <span class="codeexampletitle">How it will be rendered</span>
-        $$\textbf{A} \cdot \textbf{B}$$</div>
-</div> 
+                <p>Similarly, the product sign is a capital letter pi, but it's drawn larger than a normal pi, so use
+                    the command <code>\prod</code>.</p>
 
-<p>Use the <code>\times</code> command to denote the cross product.</p>
+                <div class="codeexample">
+                    <code>
+                        <span class="codeexampletitle">What you type</span>
+                        \prod_{i = m}^{n} a_{i}</code>
+                    <div class="math">
+                        <span class="codeexampletitle">How it will be rendered</span>
+                        $$\prod_{i \,=\, m}^{n} a_{i}$$</div>
+                </div>
 
-<div class="codeexample">
-    <code>
-        <span class="codeexampletitle">What you type</span>
-        \textbf{A} \times \textbf{B}</code>
-    <div class="math">
-        <span class="codeexampletitle">How it will be rendered</span>
-        $$\textbf{A} \times \textbf{B}$$</div>
-</div> 
+            </div>
+        </div>
+    </section>
 
-<p>You can add the <b>nabla symbol</b> with the command <code>\nabla</code>.</p>
 
-<div class="codeexample">
-    <code>
-        <span class="codeexampletitle">What you type</span>
-        \nabla \cdot \textbf{A}</code>
-    <div class="math">
-        <span class="codeexampletitle">How it will be rendered</span>
-        $$\nabla \cdot \textbf{A}$$</div>
-</div> 
 
-</div>
-</div>
-</section>
-    
-    
-<section class="whitesection" id="part7">
-    <div class="centrecolumn">
-        <div class="textcolumn">         
 
-            <h2>Diacritics</h2>
 
-            <p>In addition to the <code>\hat</code> command described in the <a href="#part6">vectors</a> section, there are various other commands for diacritics that can be placed over identifiers. These are given in the table below.</p>
+    <section class="whitesection" id="part4">
+        <div class="centrecolumn">
+            <div class="textcolumn">
+                <h2>Derivatives</h2>
 
-            <table class="tableofcommands rightborderall">
-                <tr>
-                    <td>Acute Accent</td>
-                    <td><code>\acute{x}</code></td>
-                    <td>$$\acute{x}$$</td>
-                </tr>
-                <tr>
-                    <td>Grave Accent</td>
-                    <td><code>\grave{x}</code></td>
-                    <td>$$\grave{x}$$</td>
-                </tr>
-                <tr>
-                    <td>Macron or 'Bar'</td>
-                    <td><code>\bar{x}</code></td>
-                    <td>$$\bar{x}$$</td>
-                </tr>
-                <tr>
-                    <td>Circumflex or 'Hat'</td>
-                    <td><code>\hat{x}</code></td>
-                    <td>$$\hat{x}$$</td>
-                </tr>
-                <tr>
-                    <td>Caron or 'Check'</td>
-                    <td><code>\check{x}</code></td>
-                    <td>$$\check{x}$$</td>
-                </tr>
-                <tr>
-                    <td>Breve</td>
-                    <td><code>\breve{x}</code></td>
-                    <td>$$\breve{x}$$</td>
-                </tr>
-                <tr>
-                    <td>Ring</td>
-                    <td><code>\mathring{x}</code></td>
-                    <td>$$\mathring{x}$$</td>
-                </tr>
-                <tr>
-                    <td>Tilde</td>
-                    <td><code>\tilde{x}</code></td>
-                    <td>$$\tilde{x}$$</td>
-                </tr> 
-                <tr>
-                    <td>Wide Circumflex or 'Wide Hat'</td>
-                    <td><code>\widehat{xxx}</code></td>
-                    <td>$$\widehat{xxx}$$</td>
-                </tr>             
-                <tr>
-                    <td>Wide Tilde</td>
-                    <td><code>\widetilde{xxx}</code></td>
-                    <td>$$\widetilde{xxx}$$</td>
-                </tr>
-                <tr>
-                    <td>Dot</td>
-                    <td><code>\dot{x}</code></td>
-                    <td>$$\dot{x}$$</td>
-                </tr>
-                <tr>
-                    <td>Double Dot</td>
-                    <td><code>\ddot{x}</code></td>
-                    <td>$$\ddot{x}$$</td>
-                </tr>
-                <tr>
-                    <td>Triple Dot</td>
-                    <td><code>\dddot{x}</code></td>
-                    <td>$$\dddot{x}$$</td>
-                </tr>
-                <tr>
-                    <td>Arrow</td>
-                    <td><code>\vec{x}</code></td>
-                    <td>$$\vec{x}$$</td>
-                </tr>
-           </table>
-    
+                <p>When trying to add a derivative to a mathematical expression, it would be tempting to type the
+                    following.</p>
 
-    </div>
-</div>
-</section>
-    
-    
-<section class="whitesection" id="part8">
-    <div class="centrecolumn">
-        <div class="textcolumn">
-            <h2>Other Brackets and Delimiters</h2>
-    
-              <p>There are a variety of other brackets available in addition to round brackets (), square brackets [], and curly brackets {}. The commands for these are given in the table below.</p>
+                <div class="codeexample">
+                    <code>
+                        <span class="codeexampletitle">What you type</span>
+                        \frac{dx}{dt}</code>
+                    <div class="math">
+                        <span class="codeexampletitle">How it will be rendered</span>
+                        $$\frac{dx}{dt}$$</div>
+                </div>
 
-              <table class="tableofcommands rightborderall">
-                <tr>
-                    <td>Left Bracket</td>
-                    <td>Right Bracket</td>
-                    <td></td>
-                </tr>  
-                <tr class="borderabove">
-                    <td><code>\lvert</code></td>
-                    <td><code>\rvert</code></td>
-                    <td>$$\lvert ... \rvert$$</td>
-                </tr>   
-                <tr>
-                    <td><code>\lVert</code></td>
-                    <td><code>\rVert</code></td>
-                    <td>$$\lVert ... \rVert$$</td>
-                </tr>   
-                <tr>
-                    <td><code>\langle</code></td>
-                    <td><code>\rangle</code></td>
-                    <td>$$\langle ... \rangle$$</td>
-                </tr>   
-                <tr>
-                    <td><code>\lceil</code></td>
-                    <td><code>\rceil</code></td>
-                    <td>$$\lceil ... \rceil$$</td>
-                </tr>   
-                <tr>
-                    <td><code>\lfloor</code></td>
-                    <td><code>\rfloor</code></td>
-                    <td>$$\lfloor ... \rfloor$$</td>
-                </tr>   
-                <tr>
-                    <td><code>\lgroup</code></td>
-                    <td><code>\rgroup</code></td>
-                    <td>$$\lgroup ... \rgroup$$</td>
-                </tr>   
-                <tr>
-                    <td><code>\lmoustache</code></td>
-                    <td><code>\rmoustache</code></td>
-                    <td>$$\lmoustache ... \rmoustache$$</td>
-                </tr>     
-           </table>
-    </div>
-</div>
-</section>
-    
-    
-<section class="whitesection" id="part9">
-    <div class="centrecolumn">
-        <div class="textcolumn">
-            <h2>Set Theory</h2>
+                <p>However, in a derivative, the d's aren't supposed to be italicised, because they aren't identifiers.
+                    In order to get the d's to be non-italicised, use the command <code>\mathrm{d}</code>, as below.</p>
 
-            <p>There are a number of commands available for adding the symbols of set theory into expressions. These are given in the table below.</p>
-    
-            <table class="tableofcommands rightborderall">
-                <tr>
-                    <td>Union Operator</td>
-                    <td><code>\cup</code></td>
-                    <td>$$\cup$$</td>
-                </tr>   
-                <tr>
-                    <td>Intersection Operator</td>
-                    <td><code>\cap</code></td>
-                    <td>$$\cap$$</td>
-                </tr>    
-                <tr>
-                    <td>Set Difference Operator</td>
-                    <td><code>\setminus</code></td>
-                    <td>$$\setminus$$</td>
-                </tr>   
-                <tr>
-                    <td>Subset Sign</td>
-                    <td><code>\subseteq</code></td>
-                    <td>$$\subseteq$$</td>
-                </tr>      
-                <tr>
-                    <td>Proper Subset Sign</td>
-                    <td><code>\subset</code></td>
-                    <td>$$\subset$$</td>
-                </tr>     
-                <tr>
-                    <td>'Not A Subset' Sign</td>
-                    <td><code>\not\subset</code></td>
-                    <td>$$\not\subset$$</td>
-                </tr>    
-                <tr>
-                    <td>Superset Sign</td>
-                    <td><code>\supseteq</code></td>
-                    <td>$$\supseteq$$</td>
-                </tr>     
-                <tr>
-                    <td>Proper Superset Sign</td>
-                    <td><code>\supset</code></td>
-                    <td>$$\supset$$</td>
-                </tr>     
-                <tr>
-                    <td>'Not A Superset' Sign</td>
-                    <td><code>\not\supset</code></td>
-                    <td>$$\not\supset$$</td>
-                </tr>   
-                <tr>
-                    <td>'Element Of' Sign</td>
-                    <td><code>\in</code></td>
-                    <td>$$\in$$</td>
-                </tr>    
-                <tr>
-                    <td>'Contains Element' Sign</td>
-                    <td><code>\ni</code></td>
-                    <td>$$\ni$$</td>
-                </tr>    
-                <tr>
-                    <td>'Not An Element Of' Sign</td>
-                    <td><code>\notin</code> or <code>\not\in</code></td>
-                    <td>$$\notin$$</td>
-                </tr> 
-                <tr>
-                    <td>'Does Not Contain Element' Sign</td>
-                    <td><code>\notni</code> or <code>\not\ni</code></td>
-                    <td>$$\notni$$</td>
-                </tr>     
-                <tr>
-                    <td>Empty Set Sign</td>
-                    <td><code>\varnothing</code></td>
-                    <td>$$\varnothing$$</td>
-                </tr>   
-                <tr>
-                    <td>Empty Set Sign</td>
-                    <td><code>\emptyset</code></td>
-                    <td>$$\emptyset$$</td>
-                </tr>                  
-                <tr>
-                    <td>'For All' Sign</td>
-                    <td><code>\forall</code></td>
-                    <td>$$\forall$$</td>
-                </tr>    
-                <tr>
-                    <td>'There Exists' Sign</td>
-                    <td><code>\exists</code></td>
-                    <td>$$\exists$$</td>
-                </tr>    
-                <tr>
-                    <td>'Therefore' Sign</td>
-                    <td><code>\therefore</code></td>
-                    <td>$$\therefore$$</td>
-                </tr>    
-                <tr>
-                    <td>Hebrew Letter Aleph</td>
-                    <td><code>\aleph</code></td>
-                    <td>$$\aleph$$</td>
-                </tr>   
-                <tr>
-                    <td>Universal Set</td>
-                    <td><code>\mathbb{U}</code></td>
-                    <td>$$\mathbb{U}$$</td>
-                </tr>   
-                <tr>
-                    <td>Set of all Natural Numbers</td>
-                    <td><code>\mathbb{N}</code></td>
-                    <td>$$\mathbb{N}$$</td>
-                </tr>    
-                <tr>
-                    <td>Set of all Integers</td>
-                    <td><code>\mathbb{Z}</code></td>
-                    <td>$$\mathbb{Z}$$</td>
-                </tr>    
-                <tr>
-                    <td>Set of all Rational Numbers</td>
-                    <td><code>\mathbb{Q}</code></td>
-                    <td>$$\mathbb{Q}$$</td>
-                </tr>   
-                <tr>
-                    <td>Set of all Algebraic Numbers</td>
-                    <td><code>\mathbb{A}</code></td>
-                    <td>$$\mathbb{A}$$</td>
-                </tr>     
-                <tr>
-                    <td>Set of all Real Numbers</td>
-                    <td><code>\mathbb{R}</code></td>
-                    <td>$$\mathbb{R}$$</td>
-                </tr>     
-                <tr>
-                    <td>Set of all Imaginary Numbers</td>
-                    <td><code>\mathbb{I}</code></td>
-                    <td>$$\mathbb{I}$$</td>
-                </tr>    
-                <tr>
-                    <td>Set of all Complex Numbers</td>
-                    <td><code>\mathbb{C}</code></td>
-                    <td>$$\mathbb{C}$$</td>
-                </tr>  
-                <tr>
-                    <td>Set of all Quarternions</td>
-                    <td><code>\mathbb{H}</code></td>
-                    <td>$$\mathbb{H}$$</td>
-                </tr>  
-                <tr>
-                    <td>Set of all Octonions</td>
-                    <td><code>\mathbb{O}</code></td>
-                    <td>$$\mathbb{O}$$</td>
-                </tr>       
-           </table>
+                <div class="codeexample">
+                    <code>
+                        <span class="codeexampletitle">What you type</span>
+                        \frac{\mathrm{d} x}{\mathrm{d} t}</code>
+                    <div class="math">
+                        <span class="codeexampletitle">How it will be rendered</span>
+                        $$\frac{\mathrm{d} x}{\mathrm{d} t}$$</div>
+                </div>
 
-    </div>
-</div>
-</section>
-    
+                <p>Use superscripts to denote higher-order derivatives.</p>
+
+                <div class="codeexample">
+                    <code>
+                        <span class="codeexampletitle">What you type</span>
+                        \frac{\mathrm{d}^{2} x}{\mathrm{d} t^{2}}</code>
+                    <div class="math">
+                        <span class="codeexampletitle">How it will be rendered</span>
+                        $$\frac{\mathrm{d}^{2} x}{\mathrm{d} t^{2}}$$</div>
+                </div>
+
+                <p>That's how to write full derivatives. To write partial derivatives, use the command
+                    <code>\partial</code> instead of <code>\mathrm{d}</code> to get the curly d.</p>
+
+                <div class="codeexample">
+                    <code>
+                        <span class="codeexampletitle">What you type</span>
+                        \frac{\partial f}{\partial t}</code>
+                    <div class="math">
+                        <span class="codeexampletitle">How it will be rendered</span>
+                        $$\frac{\partial f}{\partial t}$$</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section class="whitesection" id="part5">
+        <div class="centrecolumn">
+            <div class="textcolumn">
+
+                <h2>Integrals</h2>
+
+                <p>Use the command <code>\int</code> to write the integral sign. As with <a
+                        href="#part4">derivatives</a> described above, the d of the infinitesimal element needs to be
+                    non-italicised. To do this, use <code>\mathrm{d}</code>.</p>
+
+                <div class="codeexample">
+                    <code>
+                        <span class="codeexampletitle">What you type</span>
+                        \int p(x) \mathrm{d} x</code>
+                    <div class="math">
+                        <span class="codeexampletitle">How it will be rendered</span>
+                        $$\int p(x) \, \mathrm{d} x$$</div>
+                </div>
+
+                <p>Use subscripts and superscripts to denote the limits of an integral.</p>
+
+                <div class="codeexample">
+                    <code>
+                        <span class="codeexampletitle">What you type</span>
+                        \int_{0}^{3} p(x) \mathrm{d} x</code>
+                    <div class="math">
+                        <span class="codeexampletitle">How it will be rendered</span>
+                        $$\int_{0}^{3} p(x) \, \mathrm{d} x$$</div>
+                </div>
+
+                <p>You can use the commands <code>\iint</code> and <code>\iiint</code> for double and triple integrals.
+                </p>
+
+                <div class="codeexample">
+                    <code>
+                        <span class="codeexampletitle">What you type</span>
+                        \iint p(x, y) \mathrm{d} x \mathrm{d} y</code>
+                    <div class="math">
+                        <span class="codeexampletitle">How it will be rendered</span>
+                        $$\iint p(x, y) \, \mathrm{d} x \, \mathrm{d} y$$</div>
+                </div>
+
+                <div class="codeexample">
+                    <code>
+                        <span class="codeexampletitle">What you type</span>
+                        \iiint p(x, y, z) \mathrm{d} x \mathrm{d} y \mathrm{d} z</code>
+                    <div class="math">
+                        <span class="codeexampletitle">How it will be rendered</span>
+                        $$\iiint p(x, y, z) \, \mathrm{d} x \, \mathrm{d} y \, \mathrm{d} z$$</div>
+                </div>
+
+                <p>You can use the commands <code>\oint</code> and <code>\oiint</code> for single and double closed
+                    integrals.</p>
+
+                <div class="codeexample">
+                    <code>
+                        <span class="codeexampletitle">What you type</span>
+                        \oint p(x) \mathrm{d} x</code>
+                    <div class="math">
+                        <span class="codeexampletitle">How it will be rendered</span>
+                        $$\oint p(x) \, \mathrm{d} x$$</div>
+                </div>
+
+                <div class="codeexample">
+                    <code>
+                        <span class="codeexampletitle">What you type</span>
+                        \oiint p(x, y) \mathrm{d} x \mathrm{d} y</code>
+                    <div class="math">
+                        <span class="codeexampletitle">How it will be rendered</span>
+                        $$\oiint p(x, y) \, \mathrm{d} x \, \mathrm{d} y$$</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section class="whitesection" id="part6">
+        <div class="centrecolumn">
+            <div class="textcolumn">
+                <h2>Vectors</h2>
+
+                <p>In digital and print media, vectors are, by convention, styled using bold font. To put something in
+                    bold font, use the command <code>\textbf</code>.</p>
+
+                <div class="codeexample">
+                    <code>
+                        <span class="codeexampletitle">What you type</span>
+                        \textbf{v}</code>
+                    <div class="math">
+                        <span class="codeexampletitle">How it will be rendered</span>
+                        $$\textbf{v}$$</div>
+                </div>
+
+                <p>Put any subscripts and superscripts <b>outside</b> of the brackets of the <code>\textbf</code>
+                    command.</p>
+
+
+                <div class="codeexample">
+                    <code>
+                        <span class="codeexampletitle">What you type</span>
+                        \textbf{v}_{x}, \textbf{v}_{y}</code>
+                    <div class="math">
+                        <span class="codeexampletitle">How it will be rendered</span>
+                        $$\textbf{v}_{x}, \textbf{v}_{y}$$</div>
+                </div>
+
+                <p>Unit vectors are denoted by a circumflex, or 'hat', over the identifier. Use the <code>\hat</code>
+                    command to do this. Furthermore, typically, for i and j unit vectors, the dot above each letter is
+                    removed. Use the commands <code>\i</code> and <code>\j</code> to get these variants of the letters.
+                </p>
+
+                <div class="codeexample">
+                    <code>
+                        <span class="codeexampletitle">What you type</span>
+                        \hat{\textbf{\i}}</code>
+                    <div class="math">
+                        <span class="codeexampletitle">How it will be rendered</span>
+                        $$\hat{\textbf{\i}}$$</div>
+                </div>
+
+                <div class="codeexample">
+                    <code>
+                        <span class="codeexampletitle">What you type</span>
+                        \hat{\textbf{\j}}</code>
+                    <div class="math">
+                        <span class="codeexampletitle">How it will be rendered</span>
+                        $$\hat{\textbf{\j}}$$</div>
+                </div>
+
+                <div class="codeexample">
+                    <code>
+                        <span class="codeexampletitle">What you type</span>
+                        \hat{\textbf{k}}</code>
+                    <div class="math">
+                        <span class="codeexampletitle">How it will be rendered</span>
+                        $$\hat{\textbf{k}}$$</div>
+                </div>
+
+                <p>Use the <code>\cdot</code> command to denote the dot product.</p>
+
+                <div class="codeexample">
+                    <code>
+                        <span class="codeexampletitle">What you type</span>
+                        \textbf{A} \cdot \textbf{B}</code>
+                    <div class="math">
+                        <span class="codeexampletitle">How it will be rendered</span>
+                        $$\textbf{A} \cdot \textbf{B}$$</div>
+                </div>
+
+                <p>Use the <code>\times</code> command to denote the cross product.</p>
+
+                <div class="codeexample">
+                    <code>
+                        <span class="codeexampletitle">What you type</span>
+                        \textbf{A} \times \textbf{B}</code>
+                    <div class="math">
+                        <span class="codeexampletitle">How it will be rendered</span>
+                        $$\textbf{A} \times \textbf{B}$$</div>
+                </div>
+
+                <p>You can add the <b>nabla symbol</b> with the command <code>\nabla</code>.</p>
+
+                <div class="codeexample">
+                    <code>
+                        <span class="codeexampletitle">What you type</span>
+                        \nabla \cdot \textbf{A}</code>
+                    <div class="math">
+                        <span class="codeexampletitle">How it will be rendered</span>
+                        $$\nabla \cdot \textbf{A}$$</div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section class="whitesection" id="part7">
+        <div class="centrecolumn">
+            <div class="textcolumn">
+
+                <h2>Diacritics</h2>
+
+                <p>In addition to the <code>\hat</code> command described in the <a href="#part6">vectors</a> section,
+                    there are various other commands for diacritics that can be placed over identifiers. These are given
+                    in the table below.</p>
+
+                <table class="tableofcommands rightborderall">
+                    <tr>
+                        <td>Acute Accent</td>
+                        <td><code>\acute{x}</code></td>
+                        <td>$$\acute{x}$$</td>
+                    </tr>
+                    <tr>
+                        <td>Grave Accent</td>
+                        <td><code>\grave{x}</code></td>
+                        <td>$$\grave{x}$$</td>
+                    </tr>
+                    <tr>
+                        <td>Macron or 'Bar'</td>
+                        <td><code>\bar{x}</code></td>
+                        <td>$$\bar{x}$$</td>
+                    </tr>
+                    <tr>
+                        <td>Circumflex or 'Hat'</td>
+                        <td><code>\hat{x}</code></td>
+                        <td>$$\hat{x}$$</td>
+                    </tr>
+                    <tr>
+                        <td>Caron or 'Check'</td>
+                        <td><code>\check{x}</code></td>
+                        <td>$$\check{x}$$</td>
+                    </tr>
+                    <tr>
+                        <td>Breve</td>
+                        <td><code>\breve{x}</code></td>
+                        <td>$$\breve{x}$$</td>
+                    </tr>
+                    <tr>
+                        <td>Ring</td>
+                        <td><code>\mathring{x}</code></td>
+                        <td>$$\mathring{x}$$</td>
+                    </tr>
+                    <tr>
+                        <td>Tilde</td>
+                        <td><code>\tilde{x}</code></td>
+                        <td>$$\tilde{x}$$</td>
+                    </tr>
+                    <tr>
+                        <td>Wide Circumflex or 'Wide Hat'</td>
+                        <td><code>\widehat{xxx}</code></td>
+                        <td>$$\widehat{xxx}$$</td>
+                    </tr>
+                    <tr>
+                        <td>Wide Tilde</td>
+                        <td><code>\widetilde{xxx}</code></td>
+                        <td>$$\widetilde{xxx}$$</td>
+                    </tr>
+                    <tr>
+                        <td>Dot</td>
+                        <td><code>\dot{x}</code></td>
+                        <td>$$\dot{x}$$</td>
+                    </tr>
+                    <tr>
+                        <td>Double Dot</td>
+                        <td><code>\ddot{x}</code></td>
+                        <td>$$\ddot{x}$$</td>
+                    </tr>
+                    <tr>
+                        <td>Triple Dot</td>
+                        <td><code>\dddot{x}</code></td>
+                        <td>$$\dddot{x}$$</td>
+                    </tr>
+                    <tr>
+                        <td>Arrow</td>
+                        <td><code>\vec{x}</code></td>
+                        <td>$$\vec{x}$$</td>
+                    </tr>
+                </table>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section class="whitesection" id="part8">
+        <div class="centrecolumn">
+            <div class="textcolumn">
+
+                <h2>Other Brackets and Delimiters</h2>
+
+                <p>There are a variety of other brackets available in addition to round brackets (), square brackets [],
+                    and curly brackets {}. The commands for these are given in the table below.</p>
+
+                <table class="tableofcommands rightborderall">
+                    <tr>
+                        <td>Left Bracket</td>
+                        <td>Right Bracket</td>
+                        <td></td>
+                    </tr>
+                    <tr class="borderabove">
+                        <td><code>\lvert</code></td>
+                        <td><code>\rvert</code></td>
+                        <td>$$\lvert ... \rvert$$</td>
+                    </tr>
+                    <tr>
+                        <td><code>\lVert</code></td>
+                        <td><code>\rVert</code></td>
+                        <td>$$\lVert ... \rVert$$</td>
+                    </tr>
+                    <tr>
+                        <td><code>\langle</code></td>
+                        <td><code>\rangle</code></td>
+                        <td>$$\langle ... \rangle$$</td>
+                    </tr>
+                    <tr>
+                        <td><code>\lceil</code></td>
+                        <td><code>\rceil</code></td>
+                        <td>$$\lceil ... \rceil$$</td>
+                    </tr>
+                    <tr>
+                        <td><code>\lfloor</code></td>
+                        <td><code>\rfloor</code></td>
+                        <td>$$\lfloor ... \rfloor$$</td>
+                    </tr>
+                    <tr>
+                        <td><code>\lgroup</code></td>
+                        <td><code>\rgroup</code></td>
+                        <td>$$\lgroup ... \rgroup$$</td>
+                    </tr>
+                    <tr>
+                        <td><code>\lmoustache</code></td>
+                        <td><code>\rmoustache</code></td>
+                        <td>$$\lmoustache ... \rmoustache$$</td>
+                    </tr>
+                </table>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="whitesection" id="part9">
+        <div class="centrecolumn">
+            <div class="textcolumn">
+
+                <h2>Set Theory</h2>
+
+                <p>There are a number of commands available for adding the symbols of set theory into expressions. These
+                    are given in the table below.</p>
+
+                <table class="tableofcommands rightborderall">
+                    <tr>
+                        <td>Union Operator</td>
+                        <td><code>\cup</code></td>
+                        <td>$$\cup$$</td>
+                    </tr>
+                    <tr>
+                        <td>Intersection Operator</td>
+                        <td><code>\cap</code></td>
+                        <td>$$\cap$$</td>
+                    </tr>
+                    <tr>
+                        <td>Set Difference Operator</td>
+                        <td><code>\setminus</code></td>
+                        <td>$$\setminus$$</td>
+                    </tr>
+                    <tr>
+                        <td>Subset Sign</td>
+                        <td><code>\subseteq</code></td>
+                        <td>$$\subseteq$$</td>
+                    </tr>
+                    <tr>
+                        <td>Proper Subset Sign</td>
+                        <td><code>\subset</code></td>
+                        <td>$$\subset$$</td>
+                    </tr>
+                    <tr>
+                        <td>'Not A Subset' Sign</td>
+                        <td><code>\not\subset</code></td>
+                        <td>$$\not\subset$$</td>
+                    </tr>
+                    <tr>
+                        <td>Superset Sign</td>
+                        <td><code>\supseteq</code></td>
+                        <td>$$\supseteq$$</td>
+                    </tr>
+                    <tr>
+                        <td>Proper Superset Sign</td>
+                        <td><code>\supset</code></td>
+                        <td>$$\supset$$</td>
+                    </tr>
+                    <tr>
+                        <td>'Not A Superset' Sign</td>
+                        <td><code>\not\supset</code></td>
+                        <td>$$\not\supset$$</td>
+                    </tr>
+                    <tr>
+                        <td>'Element Of' Sign</td>
+                        <td><code>\in</code></td>
+                        <td>$$\in$$</td>
+                    </tr>
+                    <tr>
+                        <td>'Contains Element' Sign</td>
+                        <td><code>\ni</code></td>
+                        <td>$$\ni$$</td>
+                    </tr>
+                    <tr>
+                        <td>'Not An Element Of' Sign</td>
+                        <td><code>\notin</code> or <code>\not\in</code></td>
+                        <td>$$\notin$$</td>
+                    </tr>
+                    <tr>
+                        <td>'Does Not Contain Element' Sign</td>
+                        <td><code>\notni</code> or <code>\not\ni</code></td>
+                        <td>$$\notni$$</td>
+                    </tr>
+                    <tr>
+                        <td>Empty Set Sign</td>
+                        <td><code>\varnothing</code></td>
+                        <td>$$\varnothing$$</td>
+                    </tr>
+                    <tr>
+                        <td>Empty Set Sign</td>
+                        <td><code>\emptyset</code></td>
+                        <td>$$\emptyset$$</td>
+                    </tr>
+                    <tr>
+                        <td>'For All' Sign</td>
+                        <td><code>\forall</code></td>
+                        <td>$$\forall$$</td>
+                    </tr>
+                    <tr>
+                        <td>'There Exists' Sign</td>
+                        <td><code>\exists</code></td>
+                        <td>$$\exists$$</td>
+                    </tr>
+                    <tr>
+                        <td>'Therefore' Sign</td>
+                        <td><code>\therefore</code></td>
+                        <td>$$\therefore$$</td>
+                    </tr>
+                    <tr>
+                        <td>Hebrew Letter Aleph</td>
+                        <td><code>\aleph</code></td>
+                        <td>$$\aleph$$</td>
+                    </tr>
+                    <tr>
+                        <td>Universal Set</td>
+                        <td><code>\mathbb{U}</code></td>
+                        <td>$$\mathbb{U}$$</td>
+                    </tr>
+                    <tr>
+                        <td>Set of all Natural Numbers</td>
+                        <td><code>\mathbb{N}</code></td>
+                        <td>$$\mathbb{N}$$</td>
+                    </tr>
+                    <tr>
+                        <td>Set of all Integers</td>
+                        <td><code>\mathbb{Z}</code></td>
+                        <td>$$\mathbb{Z}$$</td>
+                    </tr>
+                    <tr>
+                        <td>Set of all Rational Numbers</td>
+                        <td><code>\mathbb{Q}</code></td>
+                        <td>$$\mathbb{Q}$$</td>
+                    </tr>
+                    <tr>
+                        <td>Set of all Algebraic Numbers</td>
+                        <td><code>\mathbb{A}</code></td>
+                        <td>$$\mathbb{A}$$</td>
+                    </tr>
+                    <tr>
+                        <td>Set of all Real Numbers</td>
+                        <td><code>\mathbb{R}</code></td>
+                        <td>$$\mathbb{R}$$</td>
+                    </tr>
+                    <tr>
+                        <td>Set of all Imaginary Numbers</td>
+                        <td><code>\mathbb{I}</code></td>
+                        <td>$$\mathbb{I}$$</td>
+                    </tr>
+                    <tr>
+                        <td>Set of all Complex Numbers</td>
+                        <td><code>\mathbb{C}</code></td>
+                        <td>$$\mathbb{C}$$</td>
+                    </tr>
+                    <tr>
+                        <td>Set of all Quarternions</td>
+                        <td><code>\mathbb{H}</code></td>
+                        <td>$$\mathbb{H}$$</td>
+                    </tr>
+                    <tr>
+                        <td>Set of all Octonions</td>
+                        <td><code>\mathbb{O}</code></td>
+                        <td>$$\mathbb{O}$$</td>
+                    </tr>
+                </table>
+
+            </div>
+        </div>
+    </section>
+
 </body>
 
 </html>
