@@ -362,3 +362,7 @@ code{
 .tableofcommands tr.borderabove{
      border-top: 1px solid rgba(0, 0, 0, 0.2);   
 }
+
+.tableofcommands code{
+     font-family: 'Courier New', Courier, monospace;
+}

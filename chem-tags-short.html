@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8" />
+
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i&amp;subset=greek,greek-ext,latin-ext"
+        rel="stylesheet">
+
+    <link href="style.css" type="text/css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css"
+        integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+
+    <!-- The loading of KaTeX is deferred to speed up page rendering -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js"
+        integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4"
+        crossorigin="anonymous"></script>
+
+        <script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/mhchem.min.js" integrity="sha384-5gCAXJ0ZgozlShOzzT0OWArn7yCPGWVIvgo+BAd8NUKbCmulrJiQuCVR9cHlPHeG"  crossorigin="anonymous"></script>
+
+    <!-- To automatically render math in text elements, include the auto-render extension: -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js"
+        integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
+
+    <title></title>
+
+</head>
+
+<body>
+
+    <section class="whitesection" id="part0">
+        <div class="centrecolumn">
+            <div class="textcolumn">
+                <h1></h1>
+
+                <p></p>
+
+                <h3 id="toc">Table of Contents</h3>
+
+                <ul>
+                    <li><a href="#part1"></a></li>
+                    <li><a href="#part2"></a></li>
+                    <li><a href="#part3"></a></li>
+                    <li><a href="#part4"></a></li>
+                    <li><a href="#part5"></a></li>
+                    <li><a href="#part6"></a></li>
+                    <li><a href="#part7"></a></li>
+                    <li><a href="#part8"></a></li>
+                    <li><a href="#part9"></a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section class="whitesection" id="part1">
+        <div class="centrecolumn">
+            <div class="textcolumn">
+
+                <h2>The &lt;chem&gt; Tag</h2>
+
+                <p>In order to identify the chemical equations within the text of a question, enclose them in <code>&lt;chem&gt;</code> tags.</p>
+
+                <p>
+Place an 'opening' tag just before each equation, and a 'closing' tag just after each equation, as shown in the example below.
+            </p>
+            <code style="white-space: pre-line;">
+   &lt;chem&gt;CO2 + C -> 2 CO&lt;/chem&gt;
+</code>
+
+            <p>
+                The <b>opening</b> tag is just the word "chem" with angle brackets on either side:
+                <code>&lt;chem&gt;</code>.
+                The <b>closing</b> tag is the same but with a forward slash before the word "chem":
+                <code>&lt;/chem&gt;</code>.
+            </p>
+            
+            <p>
+                The chemical equation enclosed by the tags needs to be written in a special syntax, which is described in the rest of this document.
+            </p>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section class="whitesection" id="part1">
+        <div class="centrecolumn">
+            <div class="textcolumn">
+
+                <h2>Chemical Formulae</h2>
+                
+                <p>Any single digit number that follows an element symbol will be rendered as a subscript, as below.</p>
+                
+                <div class="codeexample">
+                    <code>
+                        <span class="codeexampletitle">What you type</span>
+                        H2</code>
+                    <div class="math">
+                        <span class="codeexampletitle">How it will be rendered</span>
+                        $$\ce{H2}$$</div>
+                </div>
+              
+                <div class="codeexample">
+                    <code>
+                        <span class="codeexampletitle">What you type</span>
+                        H2SO4</code>
+                    <div class="math">
+                        <span class="codeexampletitle">How it will be rendered</span>
+                        $$\ce{H2SO4}$$</div>
+                </div>
+
+                <p>A plus or a minus sign that follows an element symbol will be rendered as a superscript, as below.</p>
+
+                <div class="codeexample">
+                    <code>
+                        <span class="codeexampletitle">What you type</span>
+                        H+</code>
+                    <div class="math">
+                        <span class="codeexampletitle">How it will be rendered</span>
+                        $$\ce{H+}$$</div>
+                </div>
+
+                <div class="codeexample">
+                    <code>
+                        <span class="codeexampletitle">What you type</span>
+                        Cl-</code>
+                    <div class="math">
+                        <span class="codeexampletitle">How it will be rendered</span>
+                        $$\ce{Cl-}$$</div>
+                </div>
+
+                <p>If both a number and a sign follow an element symbol, the number will be written as a subscript and the sign will be written as a superscript, as below.</p>
+
+                <div class="codeexample">
+                    <code>
+                        <span class="codeexampletitle">What you type</span>
+                        NO3-</code>
+                    <div class="math">
+                        <span class="codeexampletitle">How it will be rendered</span>
+                        $$\ce{NO3-}$$</div>
+                </div>
+            
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section class="whitesection" id="part1">
+        <div class="centrecolumn">
+            <div class="textcolumn">
+
+                <h2>Atomic Numbers and Mass Numbers</h2>    
+            
+            <p>Atomic numbers and mass numbers appear before an element symbol. To achieve this, use subscript and superscript notation immediately before the element symbol, as shown below.</p>
+            
+            <div class="codeexample">
+                <code>
+                    <span class="codeexampletitle">What you type</span>
+                    _{90}^{227}Th</code>
+                <div class="math">
+                    <span class="codeexampletitle">How it will be rendered</span>
+                    $$\ce{ _{90}^{227}Th }$$</div>
+            </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section class="whitesection" id="part1">
+        <div class="centrecolumn">
+            <div class="textcolumn">
+
+                <h2>Oxidation States</h2>
+              
+                <p>To denote an oxidation state using roman numerals, use superscript notation, as shown below.</p>
+
+                <div class="codeexample">
+                    <code>
+                        <span class="codeexampletitle">What you type</span>
+                        Fe^{II}Fe^{III}2O4</code>
+                    <div class="math">
+                        <span class="codeexampletitle">How it will be rendered</span>
+                        $$\ce{ Fe^{II}Fe^{III}2O4 }$$</div>
+                </div>            
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section class="whitesection" id="part1">
+        <div class="centrecolumn">
+            <div class="textcolumn">
+
+                <h2>Reactions</h2>
+
+                <p>The set of arrows that can be used for denoting reactions is given in the table below.</p>
+              
+                <table class="tableofcommands rightborderall">
+                    <tr>
+                        <td><code>A -&gt; B</code></td>
+                        <td>$$\ce{ A -&gt; B }$$</td>
+                    </tr>
+                    <tr>
+                        <td><code>A &lt;- B</code></td>
+                        <td>$$\ce{ A &lt;- B }$$</td>
+                    </tr>
+                    <tr>
+                        <td><code>A &lt;-&gt; B</code></td>
+                        <td>$$\ce{ A &lt;-&gt; B }$$</td>
+                    </tr>
+                    <tr>
+                        <td><code>A &lt;--&gt; B</code></td>
+                        <td>$$\ce{ A &lt;--&gt; B }$$</td>
+                    </tr>
+                    <tr>
+                        <td><code>A &lt;=&gt; B</code></td>
+                        <td>$$\ce{ A &lt;=&gt; B }$$</td>
+                    </tr>
+                    <tr>
+                        <td><code>A &lt;=&gt;&gt; B</code></td>
+                        <td>$$\ce{ A &lt;=&gt;&gt; B }$$</td>
+                    </tr>
+                    <tr>
+                        <td><code>A &lt;&lt;=&gt; B</code></td>
+                        <td>$$\ce{ A &lt;&lt;=&gt; B }$$</td>
+                    </tr>                
+                    </table>
+
+                    <p>To put text <i>above</i> an arrow, write it in square brackets [] immediately after the arrow, as below.</p>
+
+                    <div class="codeexample">
+                        <code>
+                            <span class="codeexampletitle">What you type</span>
+                            A ->[a] B</code>
+                        <div class="math">
+                            <span class="codeexampletitle">How it will be rendered</span>
+                            $$\ce{A ->[a] B}$$</div>
+                    </div>
+
+                    <p>This syntax can be extended to also put something <i>below</i> the arrow. Write text that should go below the arrow in a second set of square brackets.</p>
+
+                    <div class="codeexample">
+                        <code>
+                            <span class="codeexampletitle">What you type</span>
+                            A ->[a][b] B</code>
+                        <div class="math">
+                            <span class="codeexampletitle">How it will be rendered</span>
+                            $$\ce{A ->[a][b] B}$$</div>
+                    </div>
+
+                    <p>To <i>only</i> place text below the arrow, leave the first set of brackets empty.</p>
+
+                    <div class="codeexample">
+                        <code>
+                            <span class="codeexampletitle">What you type</span>
+                            A ->[][b] B</code>
+                        <div class="math">
+                            <span class="codeexampletitle">How it will be rendered</span>
+                            $$\ce{A ->[][b] B}$$</div>
+                    </div>            
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section class="whitesection" id="part1">
+        <div class="centrecolumn">
+            <div class="textcolumn">
+
+                <h2>Bonds</h2>
+              
+                <p>You can denote a single bond between atoms or molecules using a hyphen <code>-</code>, as shown below.</p>
+
+                <div class="codeexample">
+                    <code>
+                        <span class="codeexampletitle">What you type</span>
+                        H-H</code>
+                    <div class="math">
+                        <span class="codeexampletitle">How it will be rendered</span>
+                        $$\ce{H-H}$$</div>
+                </div>
+              
+                <p>You can denote a double bond using an equals sign <code>=</code>, as shown below.</p>
+
+                <div class="codeexample">
+                    <code>
+                        <span class="codeexampletitle">What you type</span>
+                        O=O</code>
+                    <div class="math">
+                        <span class="codeexampletitle">How it will be rendered</span>
+                        $$\ce{O=O}$$</div>
+                </div>
+              
+                <p>You can denote a triple bond using a plus sign <code>+</code>, as shown below.</p>
+
+                <div class="codeexample">
+                    <code>
+                        <span class="codeexampletitle">What you type</span>
+                        N+N</code>
+                    <div class="math">
+                        <span class="codeexampletitle">How it will be rendered</span>
+                        $$\ce{N#N}$$</div>
+                </div>
+         
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section class="whitesection" id="part1">
+        <div class="centrecolumn">
+            <div class="textcolumn">
+              
+
+            
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section class="whitesection" id="part1">
+        <div class="centrecolumn">
+            <div class="textcolumn">
+              
+
+            
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section class="whitesection" id="part1">
+        <div class="centrecolumn">
+            <div class="textcolumn">
+              
+
+            
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section class="whitesection" id="part1">
+        <div class="centrecolumn">
+            <div class="textcolumn">
+              
+
+            
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section class="whitesection" id="part1">
+        <div class="centrecolumn">
+            <div class="textcolumn">
+              
+
+            
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section class="whitesection" id="part1">
+        <div class="centrecolumn">
+            <div class="textcolumn">
+              
+
+            
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section class="whitesection" id="part1">
+        <div class="centrecolumn">
+            <div class="textcolumn">
+              
+
+            
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section class="whitesection" id="part1">
+        <div class="centrecolumn">
+            <div class="textcolumn">
+              
+
+            
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section class="whitesection" id="part1">
+        <div class="centrecolumn">
+            <div class="textcolumn">
+              
+
+            
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section class="whitesection" id="part1">
+        <div class="centrecolumn">
+            <div class="textcolumn">
+              
+
+            
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section class="whitesection" id="part1">
+        <div class="centrecolumn">
+            <div class="textcolumn">
+              
+
+            
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section class="whitesection" id="part1">
+        <div class="centrecolumn">
+            <div class="textcolumn">
+              
+
+            
+
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
