@@ -47,6 +47,7 @@
                     <li><a href="#part4">Derivatives</a></li>
                     <li><a href="#part5">Integrals</a></li>
                     <li><a href="#part6">Vectors</a></li>
+                    <li><a href="#part6a">Matrices</a></li>
                     <li><a href="#part7">Diacritics</a></li>
                     <li><a href="#part8">Other Brackets and Delimiters</a></li>
                     <li><a href="#part9">Set Theory</a></li>
@@ -544,6 +545,107 @@
                         $$\nabla \cdot \textbf{A}$$</div>
                 </div>
 
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section class="whitesection" id="part6a">
+        <div class="centrecolumn">
+            <div class="textcolumn">
+                <h2>Matrices</h2>
+
+                <p>A grid, or array, of numbers, identifiers, or other expressions, as used in a matrix, can be defined using <code>\begin{array}</code> and <code>\end{array}</code>.</p>
+
+                <p>When using these commands, the <b>columns</b> that the array needs to have must be denoted in a second pair of recurve brackets after the <code>\begin{array}</code> command. The example below shows how an array with 2 centre-aligned columns is defined.</p>
+
+                <div class="codeexample">
+                    <code style="text-align: left;">
+                        <span class="codeexampletitle">What you type</span>
+                        <span style="text-align: left;">\begin{array}{cc}<br />
+                            ... elements of the array / matrix ... <br />
+                        \end{array}</span></code>
+                </div>
+
+                <p>There are 2 letters, 'cc', which indicates that there will be 2 columns in total. The 'c's here don't represent 'column', but 'centre'. This code will create an array with 2 <b>centre-aligned</b> columns. It is possible to create arrays with mixtures of centre-aligned, left-aligned, and right-aligned columns, but as matrix elements always use centre-aligned columns, we'll only look at these here.</p>
+
+                <p>The example below shows how an array with 3 centre-aligned columns is defined.</p>
+
+                <div class="codeexample">
+                    <code style="text-align: left;">
+                        <span class="codeexampletitle">What you type</span>
+                        <span style="text-align: left;"></span>\begin{array}{ccc}<br />
+                            ... elements of the array / matrix ... <br />
+                        \end{array}</span></code>
+                </div>
+
+                <p>The elements for each row of the array are written between the <code>\begin{array}</code> and <code>\end{array}</code> commands. Elements are separated from each other using an ampersand (<b>&</b>). The example below shows the elements of the first row of a 3-column array.</p>
+
+                <div class="codeexample">
+                    <code style="text-align: left;">
+                        <span class="codeexampletitle">What you type</span>
+                        <span style="text-align: left;"></span>\begin{array}{ccc}<br />
+                            3 & 7 & 2<br />
+                        \end{array}</span></code>
+                    <div class="math">
+                        <span class="codeexampletitle">How it will be rendered</span>
+                        $$\begin{array}{ccc} 3 & 7 & 2 \end{array}$$</div>
+                </div>
+
+                <p>Use double backslash (<b>\\</b>) to indicate that you want to start a new row in the array, as shown in the example below.</p>
+
+                <div class="codeexample">
+                    <code style="text-align: left;">
+                        <span class="codeexampletitle">What you type</span>
+                        <span style="text-align: left;"></span>\begin{array}{ccc}<br />
+                            3 & 7 & 2 \\<br />
+                            8 & 19 & 6<br />
+                        \end{array}</span></code>
+                    <div class="math">
+                        <span class="codeexampletitle">How it will be rendered</span>
+                        $$\begin{array}{ccc} 3 & 7 & 2 \\ 8 & 19 & 6 \end{array}$$</div>
+                </div>
+
+                <p>Matrices, of course, have brackets around them. These can be added by placing the <code>\left(</code> command before the <code>\begin{array}</code> command, and placing the <code>\right)</code> command after the <code>\end{array}</code> command, as shown below.</p>
+           
+                <div class="codeexample">
+                    <code style="text-align: left;">
+                        <span class="codeexampletitle">What you type</span>
+                        <span style="text-align: left;"></span>
+                        \left(<br />
+                        \begin{array}{ccc}<br />
+                            3 & 7 & 2 \\<br />
+                            8 & 19 & 6<br />
+                        \end{array}<br />
+                        \right)
+                        </span></code>
+                    <div class="math">
+                        <span class="codeexampletitle">How it will be rendered</span>
+                        $$\left( \begin{array}{ccc} 3 & 7 & 2 \\ 8 & 19 & 6 \end{array} \right)$$</div>
+                </div>
+
+                <p>Other types of brackets can also be used - see <a href="#part8">Other Brackets and Delimiters</a></p>
+
+                <p>Matrix elements don't have to just be numbers - they can be any mathematical expression, as shown below.</p>
+
+                <div class="codeexample">
+                    <code style="text-align: left;">
+                        <span class="codeexampletitle">What you type</span>
+                        <span style="text-align: left;"></span>
+                        \left(<br />
+                        \begin{array}{ccc}<br />
+                            x & 2x^{2} & \frac{3}{4} \\<br />
+                            x + m & \frac{2}{\pi} & \sin(\theta)<br />
+                        \end{array}<br />
+                        \right)
+                        </span></code>
+                    <div class="math">
+                        <span class="codeexampletitle">How it will be rendered</span>
+                        $$\left( \begin{array}{ccc} x & 2x^{2} & \frac{3}{4} \\ x + m & \frac{2}{\pi} & \sin(\theta) \end{array} \right)$$</div>
+                </div>
             </div>
         </div>
     </section>
